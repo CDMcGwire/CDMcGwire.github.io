@@ -1,0 +1,19 @@
+/* CSS Document */
+
+.theme-text {
+	color: #FF950F;
+}
+
+.theme-background {
+	background: #FF950F;
+}
+
+#current-link,
+nav a:hover,
+nav a:active {
+	background: #FF950F;
+}
+
+h1 {
+	color: #FF950F;
+}

@@ -1,0 +1,233 @@
+/* Color Themeing */
+
+.theme-text {
+	color: #FF950F;
+}
+
+.theme-background {
+	background: #FF950F;
+}
+
+/* Organizational Stuff*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #FFFFFF;
+	font-weight: 300;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+section::before,
+section::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.full,
+.third,
+.two-thirds,
+.fourth,
+.half {
+  width: 100%;
+}
+
+article {
+	max-width: 500px;
+}
+
+@media screen and (min-width: 800px) {
+	.full {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .third {
+    width: calc(100% / 3);
+  }
+  .fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  article,
+	aside {
+    float: left;
+		max-width: inherit;
+  }
+}
+
+/* Navbar Styling */
+
+nav {
+	height: 40px;
+	width: 100%;
+	background: #606060;
+	color: azure;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: inherit;
+}
+
+nav li {
+	padding: inherit;
+	display: inline;
+	float: left;
+	height: inherit;
+  width: calc(100% / 4);
+}
+
+nav a {
+	color: #FFFFFF;
+	display: inline-block;
+	width: 100%;
+	height: inherit;
+	
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+nav a:hover,
+nav a:active {
+	background: #FF950F;
+}
+
+#current-link {
+	background: #FF950F;
+}
+
+@media screen and (min-width: 800px) {
+	nav {
+		position: relative;
+		left: auto;
+		bottom: auto;
+	}
+	
+	nav ul {
+		width: 800px;
+	}
+	
+	nav li:first-of-type {
+		background: #434343;
+	}
+	
+	nav li {
+		width: 100px;
+	}
+}
+
+/* Content Styling */
+
+.container {
+	margin: 0px 10px;
+}
+
+@media screen and (min-width: 800px) {
+	.container {
+		padding: 0px;
+		width: 800px;
+		margin: 0px auto;
+	}
+}
+
+
+/* Text styling */
+
+h1 {
+	font-weight: 100;
+	margin: 40px 0px 0px 0px;
+}
+
+h1, h2, h3 {
+	font-family: 'Poiret One', sans-serif;
+}
+
+.content-title {
+	font-size: 6em;
+	
+	margin: 0px;
+	margin-bottom: -20px;
+	padding-left: 0px;
+}
+
+@media screen and (min-width: 800px) {
+	.content-title {
+		font-size: 7em;
+
+		margin: 0px;
+		margin-bottom: -20px;
+		padding-left: 0px;
+	}
+}
+
+main {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
