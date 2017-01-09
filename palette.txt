@@ -1,0 +1,3 @@
+blue 		#52A1FF
+orange	#FF950F
+green		#39c436
