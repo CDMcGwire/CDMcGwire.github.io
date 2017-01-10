@@ -72,6 +72,10 @@ article {
   }
 }
 
+iframe {
+	display: inline-block;
+}
+
 /* Navbar Styling */
 
 nav {
