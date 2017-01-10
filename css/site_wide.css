@@ -139,6 +139,10 @@ nav a:active {
 	}
 }
 
+.nav-spacer {
+	height: 40px;
+}
+
 /* Content Styling */
 
 .container {
@@ -152,7 +156,6 @@ nav a:active {
 		margin: 0px auto;
 	}
 }
-
 
 /* Text styling */
 
