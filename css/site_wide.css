@@ -156,13 +156,14 @@ nav a:active {
 
 /* Text styling */
 
-h1 {
-	font-weight: 100;
+section h1 {
 	margin: 40px 0px 0px 0px;
 }
 
 h1, h2, h3 {
+	font-weight: 100;
 	font-family: 'Poiret One', sans-serif;
+	color: #52A1FF;
 }
 
 .content-title {
@@ -188,9 +189,24 @@ main {
 	padding-left: 0px;
 }
 
+/* Links */
+.container a {
+	background-color: #52A1FF;
+	color: #FFF;
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	
+	margin-top: 10px;
 
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
 
-
+.container a:hover {
+	background-color: #434343;
+}
 
 
 

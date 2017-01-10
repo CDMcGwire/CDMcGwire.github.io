@@ -1,3 +1,5 @@
-blue 		#52A1FF
-orange	#FF950F
-green		#39c436
+blue 				#52A1FF
+orange			#FF950F
+green				#39c436
+nav gray 		#606060
+dark gray		#434343
