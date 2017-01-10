@@ -73,7 +73,7 @@ article {
 }
 
 iframe {
-	display: inline-block;
+	display: block;
 }
 
 /* Navbar Styling */
