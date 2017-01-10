@@ -1,0 +1,19 @@
+/* CSS Document */
+
+nav li:first-of-type {
+	background-color: #434343;
+	width: 20%;
+}
+
+nav li {
+	width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+	nav li:first-of-type {
+		width: 100px;
+	}
+	nav li {
+		width: 200px;
+	}
+}
