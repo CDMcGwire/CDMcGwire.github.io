@@ -145,7 +145,7 @@ nav a:active {
 }
 
 .nav-spacer {
-	height: 40px;
+	height: 120px;
 }
 
 /* Content Styling */
@@ -221,10 +221,11 @@ a {
 	background-color: #52A1FF;
 	color: #FFF;
 	display: inline-block;
-	width: 80px;
+	width: 200px;
 	height: 40px;
 	
 	margin-top: 10px;
+	margin-bottom: 30px;
 
 	text-align: center;
 	text-decoration: none;
@@ -242,8 +243,6 @@ a {
 .container li a:hover {
 	color: #EEE;
 }
-
-
 
 
 
