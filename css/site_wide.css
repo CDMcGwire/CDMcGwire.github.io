@@ -18,21 +18,12 @@ body {
 	height: 100%;
 }
 
-main {
-  padding: 0 10px;
-  max-width: 1000px;
-}
-
 .full,
 .third,
 .two-thirds,
 .fourth,
 .half {
   width: 100%;
-}
-
-article {
-	max-width: 500px;
 }
 
 @media screen and (min-width: 800px) {
@@ -170,12 +161,12 @@ nav a:active {
 }
 
 /* Text styling */
-section h1 {
-	margin: 40px 0px 0px 0px;
+article {
+	padding-bottom: 40px;
 }
 
-.container h2 {
-	margin: 0px;
+section {
+	padding: 0em 0em 1.5em;
 }
 
 h1, h2, h3 {
@@ -184,7 +175,7 @@ h1, h2, h3 {
 	color: #52A1FF;
 }
 
-.content-title {
+h1 {
 	font-size: 2.5em;
 	
 	margin: 0px;
@@ -193,7 +184,7 @@ h1, h2, h3 {
 }
 
 @media screen and (min-width: 800px) {
-	.content-title {
+	h1 {
 		font-size: 5em;
 
 		margin: 0px;
@@ -202,9 +193,20 @@ h1, h2, h3 {
 	}
 }
 
-main {
-	margin-left: 0px;
-	padding-left: 0px;
+h2 {
+	font-size: 1.75em;
+	margin: 0px 0px 0px;
+}
+
+p {
+	margin: 0px 0px 1.3em;
+	max-width: 35em;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+p:last-child {
+	margin: 0px;
 }
 
 .container ul {
@@ -231,15 +233,15 @@ section > a {
 	width: 200px;
 	height: 40px;
 	
-	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 2em;
 
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
 }
 
-.container > a:hover {
+.container > a:hover,
+section > a:hover {
 	background-color: #434343;
 }
 
