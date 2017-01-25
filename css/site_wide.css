@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Poiret One', sans-serif;
 }
 
-h1, h2{
+h1, h2 {
 	font-weight: 100;
 	color: #52A1FF;
 }
@@ -209,6 +209,17 @@ h3 {
 	margin: 0px;
 }
 
+summary {
+	font-weight: 100;
+	color: #52A1FF;
+	font-size: 1.75em;
+	margin: 0px;
+}
+
+details {
+	margin-bottom: 1em;
+}
+
 p {
 	margin: 0px 0px 1.3em;
 	font-size: 1.1em;
@@ -236,6 +247,7 @@ p:last-child {
 	list-style-type: none;
 	border-left: solid 2px #52A1FF;
 	padding-left: 5px;
+	max-width: 500px;
 }
 
 .toc-list li {
@@ -251,6 +263,10 @@ p:last-child {
 .emphasized-list {
 	font-size: 1.3em;
 	background: #FFDEB5;
+}
+
+.wordy-list > li{
+	padding-top: 1em;
 }
 
 /* Links */
