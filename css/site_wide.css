@@ -174,12 +174,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Poiret One', sans-serif;
 }
 
-h1, h2 {
-	font-weight: 100;
-	color: #52A1FF;
-}
-
 h1 {
+	color: #52A1FF;
+	font-weight: 100;
 	font-size: 2.5em;
 	
 	margin: 0px;
@@ -198,6 +195,8 @@ h1 {
 }
 
 h2 {
+	font-weight: 100;
+	color: #52A1FF;
 	font-size: 1.75em;
 	margin: 0px;
 }
@@ -212,12 +211,16 @@ h3 {
 summary {
 	font-weight: 100;
 	color: #52A1FF;
-	font-size: 1.75em;
+	font-size: 1.4em;
 	margin: 0px;
 }
 
 details {
 	margin-bottom: 1em;
+}
+
+details:last-child {
+	margin-bottom: 0;
 }
 
 p {
@@ -266,7 +269,7 @@ p:last-child {
 }
 
 .wordy-list > li{
-	padding-top: 1em;
+	padding-top: 0.6em;
 }
 
 /* Links */
