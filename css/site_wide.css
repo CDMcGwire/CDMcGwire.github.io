@@ -223,6 +223,14 @@ details:last-child {
 	margin-bottom: 0;
 }
 
+.note {
+	font-size: 0.9em;
+}
+
+.note strong {
+	color: #FF950F;
+}
+
 p {
 	margin: 0px 0px 1.3em;
 	font-size: 1.1em;
@@ -237,6 +245,10 @@ p {
 
 p:last-child {
 	margin: 0px;
+}
+
+.list-summary {
+	margin-bottom: 0.1em;
 }
 
 .container ul {
@@ -261,11 +273,6 @@ p:last-child {
 	.toc-list li {
 		padding-top: 0px;
 	}
-}
-
-.emphasized-list {
-	font-size: 1.3em;
-	background: #FFDEB5;
 }
 
 .wordy-list > li{
