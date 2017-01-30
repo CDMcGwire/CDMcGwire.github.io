@@ -276,12 +276,22 @@ p:last-child {
 }
 
 .wordy-list > li{
-	padding-top: 0.6em;
+	padding-bottom: 0.6em;
 }
 
 /* Links */
 a {
 	color: #606060;
+}
+
+p a {
+	text-decoration: none;
+	color: #FF950F;
+}
+
+p a:hover {
+	text-decoration: none;
+	color: #AB5F00;
 }
 
 .container > a,
