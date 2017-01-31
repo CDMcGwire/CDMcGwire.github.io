@@ -211,13 +211,34 @@ h3 {
 summary {
 	font-weight: 100;
 	color: #52A1FF;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	margin: 0px;
+	font-family: 'Poiret One', sans-serif; 
+}
+
+.inner-summary { 
+	font-weight: 600;
+	color: #FF950F;
+	font-size: 1.4em;
+}
+
+.minor-summary {
+	font-family: 'Raleway', sans-serif; 
+	font-size: 1.2em;
 }
 
 details {
 	margin-bottom: 1em;
 }
+
+summary ~ h3 {
+	padding-left: 1.2em
+}
+
+summary ~ * {
+	padding-left: 1.5em;
+}
+
 
 details:last-child {
 	margin-bottom: 0;
