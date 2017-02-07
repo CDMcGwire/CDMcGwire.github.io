@@ -296,6 +296,11 @@ p:last-child {
 	}
 }
 
+/* Weird behaviour - Fixes the child lists from being too large of a font*/
+.toc-list ul{
+	font-size: 1em;
+}
+
 .wordy-list > li{
 	padding-bottom: 0.6em;
 }
@@ -343,7 +348,10 @@ section > a:hover {
 	color: #EEE;
 }
 
-
+.bright {
+	color: #FF950F;
+	font-weight: 100;
+}
 
 
 
