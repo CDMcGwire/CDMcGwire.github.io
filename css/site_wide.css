@@ -310,22 +310,8 @@ p:last-child {
 }
 
 /* Links */
-a {
-	color: #606060;
-}
 
-p a {
-	text-decoration: none;
-	color: #FF950F;
-}
-
-p a:hover {
-	text-decoration: none;
-	color: #AB5F00;
-}
-
-.container > a,
-section > a {
+.button-link {
 	background-color: #52A1FF;
 	color: #FFF;
 	display: inline-block;
@@ -339,8 +325,7 @@ section > a {
 	line-height: 40px;
 }
 
-.container > a:hover,
-section > a:hover {
+.button-link:hover {
 	background-color: #434343;
 }
 
@@ -348,8 +333,28 @@ section > a:hover {
 	padding-left: 5px;
 }
 
+.in-line-link {
+	padding: 0px !important;
+}
+
 .container li a:hover {
 	color: #EEE;
+}
+
+a {
+	color: #606060;
+}
+
+p a,
+.in-line-link {
+	text-decoration: none;
+	color: #FF950F;
+}
+
+p a:hover,
+.in-line-link:hover {
+	text-decoration: none;
+	color: #AB5F00 !important;
 }
 
 .bright {
