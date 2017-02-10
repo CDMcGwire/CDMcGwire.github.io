@@ -31,6 +31,39 @@
 			</section>
 			
 			<section>
+				<strong>In this section:</strong>		
+				<ul class="toc-list">
+					<li><a href="#attacking">Attacking</a></li>
+					<ul>
+						<li><a href="#critical-rolls">Critical Rolls</a></li>
+						<li><a href="#weapon-damage">Weapon Damage</a></li>
+					</ul>
+					<li><a href="#defense">Defense</a></li>
+					<ul>
+						<li><a href="#bypassing-defense">Bypassing Defense</a></li>
+					</ul>
+					<li><a href="#health-and-healing">Health and Healing</a></li>
+					<ul>
+						<li><a href="#hitting-zero">Dropping to Zero</a></li>
+						<li><a href="#death">Death</a></li>
+						<li><a href="#ooc-healing">Out of Combat Healing</a></li>
+					</ul>
+					<li><a href="#other-rules">Other Combat Rules</a></li>
+					<ul>
+						<li><a href="#attacks-of-opportunity">Attacks of Opportunity</a></li>
+						<li><a href="#casting-spells">Casting Spells</a></li>
+						<li><a href="#grappling">Grappling</a></li>
+						<li><a href="#non-lethal">Non-Lethal Weapons</a></li>
+						<li><a href="#splash-damage">Splash Damage</a></li>
+						<li><a href="#unarmed">Unarmed Combat</a></li>
+					</ul>
+				</ul>
+			</section>
+			
+			<hr/>
+			
+			<section>
+				<a name="attacking"></a>
 				<h2>Attacking</h2>
 				<p>Attacking consists of two rolls. The <strong>To-Hit</strong> roll and the <strong>Damage</strong> roll. The To Hit roll is done with a d20, while damage dice are determined by the weapon used.</p>
 				<p>A To-Hit roll is made by selecting a target and, if in range, making a standard d20 roll (and apply any relevant modifiers) to see if you hit the target. Success is determined as usual, but the results have a set effect on the following damage roll.</p>
@@ -44,6 +77,7 @@
 				
 				<p>If the attack lands, you may then deal damage to the target. Roll the set of dice indicated by your weapon, add in any modifiers you have accumulated, then modify the total as indicated by the level of success.</p>
 				
+				<a name="critical-rolls"></a>
 				<details>
 					<summary>Critical Rolls</summary>
 					<p>Rolling a natural 20 on your To-Hit results in a full, double damage attack. No damage roll has to be made, simple add all of your modifiers to the highest possible roll you could make, then double. Even if the modified To-Hit total would be lower than 17, this attack will deal double, max damage.</p>
@@ -51,6 +85,7 @@
 					<p>These are intended to represent the flukey situations that can occur in life. If success or failure were guranteed, you would not have to roll.</p>
 				</details>
 				
+				<a name="weapon-damage"></a>
 				<details>
 					<summary>Weapon Damage</summary>
 					<p>Each weapon has a damage roll associated with. Most also have an associated attribute, which is then added directly into the roll total. Most melee weapons are based on strength, while a few are based on agility. Most ranged weapons to not have an attribute bonus, unless thrown.</p>
@@ -58,11 +93,15 @@
 				
 			</section>
 			
+			<hr/>
+			
 			<section>
+				<a name="defense"></a>
 				<h2>Defense</h2>
 				<p>To ward against attacks, there are two primary defenses: <strong>Armor</strong> and <strong>Agility</strong>. Both <strong>count as penalties to the attacker</strong>. Your Armor value is determined by what protective gear you are wearing, as well as any other passive protections whether natural or magical. Whereas your Agility is simply the attribute bonus.</p>
 				<p>To calculate defense when attacked, add up your Armor, Agility, and any other situational modifers, then subtract the total from the attacker's roll. As you might imagine, a negative defense total is a bonus to the attacker.</p>
 				
+				<a name="bypassing-defense"></a>
 				<details>
 					<summary>Bypassing Defense</summary>
 					<p>There are several ways in which an attacker can reduce or negate a target's defense.</p>
@@ -79,53 +118,85 @@
 				</details>
 			</section>
 			
-			<section>
-				<h2>Health and Healing</h2>
-				<h3>Wounded</h3>
-				<p>As stated previously, hit-points represent a creature's ability to stay in fighting shape, and do not directly translate to health. Losing all hit-points puts a creature into a wounded state, whether it is an NPC or a player.</p>
-				<p>A wounded creature may no longer fight until they rest 12 hours for every point they drop below 0. Standard healing methods can bring a creature back to positive, but common creatures, like humans and animals, will still require at least an hour of rest before they can fight again. Temporary hit-points, however, work like a shot of adrenaline and can put the recipient back into the fight, only to fall unconscious when temporary points wear off.</p>
-				<p>Wounded creatures can attempt to crawl to safety on their turn by passing a Brawn roll. However, they are considered helpless and may be finished off by a further attack. In the case of surprise attacks, the attacker may elect to kill a target outright if the attack drops the target to 0 HP.</p>
-				
-				<h3>Death</h3>
-				<p>If a creature's HP equals negative half their max HP or lower, that creature is completely dead, regardless the cause of damage or whatever healing might be attempted. Only a miracle can save them at that point.</p>
-				
-				<h3>Out of Combat Healing</h3>
-				<p>After combat, a character may take a short rest (15 minutes in game time) to restore half of the hit points they lost in the last fight. They can also opt for a longer rest, restoring 25% of max health per in-game hour.</p>
-			</section>
+			<hr/>
 			
 			<section>
+				<a name="health-and-healing"></a>
+				<h2>Health and Healing</h2>
+				<p>Hit-points track a creature's health in an abstract way and should not be thought of as a linear scale of "how alive" something is. The following sections describe what happens when you lose hit-points and the primary methods of restoring them.</p>
+				
+				<a name="hitting-zero"></a>
+				<details>
+					<summary>Dropping to Zero</summary>
+					<p>Positive hit-points represent a creature's ability to stay in fighting shape. Dropping to zero or lower hit points puts a creature into a wounded state. A wounded creature may no longer fight until they rest 12 hours for every point they drop below 0.</p>
+					<p>Standard healing methods can bring a creature back to positive, but common creatures, like humans and animals, will still require at least an hour of rest before they can fight again. Temporary hit-points, however, work like a shot of adrenaline and can put the recipient back into the fight, only to fall unconscious when temporary points wear off.</p>
+					<p>Wounded creatures can attempt to crawl to safety on their turn by passing a Brawn roll. However, they are considered helpless and may be finished off by a further attack. In the case of surprise attacks, the attacker may elect to kill a target outright if the attack drops the target to 0 HP.</p>
+				</details>
+				
+				<a name="death"></a>
+				<details>
+					<summary>Death</summary>
+					<p>If a creature's HP equals negative half their max HP or lower, that creature is completely dead, regardless the cause of damage or whatever healing might be attempted. Only a miracle can save them at that point.</p>
+				</details>
+				
+				<a name="ooc-healing"></a>
+				<details>
+					<summary>Out of Combat Healing</summary>
+					<p>After combat, a character may take a short rest (15 minutes in game time) to restore half of the hit points they lost in the last fight. They can also opt for a longer rest, restoring 25% of max health per in-game hour.</p>
+				</details>
+			</section>
+			
+			<hr/>
+			
+			<section>
+				<a name="other-rules"></a>
 				<h2>Other Combat Rules</h2>
 				
-				<hr/>
-				
+				<a name="attacks-of-opportunity"></a>
 				<details>
 					<summary>Attacks of Opportunity</summary>
 					<p>Certain actions, such as attempting to cast a spell or sprinting, illicit a free attack from opponents that are in range with a melee weapon. This attack is made as normal, is optional, and only one such attack may be made per combat round.</p>
 				</details>
 				
+				<a name="casting-spells"></a>	
 				<details>
 					<summary>Casting Spells</summary>
 					<p>The exact mechanism by which spells are cast is determined by the school it belongs to. As such, each school provides a different play experience. Wizards and Sorcerers are nuanced and generally love this nuance. Details will be explained on the School's page.</p>
 				</details>
 				
+				<a name="grappling"></a>
 				<details>
 					<summary>Grappling</summary>
 					<p>To attempt to grab an opponent, a character must make a To-Hit roll as usual, however, the target’s armor score is ignored unless stated otherwise by the armor type. No immediate damage is dealt against the target. A choking attack can be made on subsequent turns to deal <strong>d4+Brawn</strong> non-lethal damage.</p>
 					<p>To break free, the victim must make an opposed roll with either Brawn or Agility against their opponent’s Brawn. This an opposed role, where attribute bonuses apply as normal, but success is determined purely by who rolls higher. Ties go to the victim of the grapple. One break attempt may be made on each of the victim’s proceeding turns, until they pass out or escape.</p>
 				</details>
 				
+				<a name="non-lethal"></a>
 				<details>
 					<summary>Non-Lethal Weapons</summary>
 					<p>Some weapons blow through armor or can slip past it entirely. When hit by a weapon with Blow-through, a character is considered as having half their total armor bonus. A weapon with Piercing does not consider the targets armor when determining whether it deals half, full, or double damage. But still uses it to determine hit or miss.</p>
 					<p>For instance, if a target has an armor value or 2 and the attacker has no hit bonus, the attacker would need to roll a natural dice total 13 or higher to hit the opponent, but would deal double damage at a roll of 18 as normal instead of 20. Bonus from speed or magic is unaffected, so a defense of 2 from speed will require the attacker to roll a dice total of 20.</p>
 				</details>
-				
+
+				<a name="splash-damage"></a>
 				<details>
-					<summary name="splash-damage">Splash Damage</summary>
+					<summary>Splash Damage</summary>
 					<p>Attacks desginated as splash damage do not need to make a to-hit roll to damage anything within range (though some may require a roll to ensure they hit the intended area).</p>
 					<p>Instead, these attacks require their targets to pass Agility rolls to avoid the damage. Here, a critical success grants a free move action.</p>
 				</details>
 				
+				<a name="throwing"></a>
+				<details>
+					<summary>Throwing</summary>
+					<p>When throwing a generic object (i.e. not a throwing weapon), distance and force are determined by the Brawn attribute and the size of the object. When throwing, the attacker must make a to-hit roll using Agility to determine if it deals any damage.</p>
+					<ul class="wordy-list">
+						<li><a href="../Adventuring Aid/generic-objects.html#sizes">Small objects</a> travel 30 x (1d4 + Brawn) feet and deal 1d4 + Brawn damage</li>
+						<li><a href="../Adventuring Aid/generic-objects.html#sizes">Medium objects</a> travel 10 x (1d4 + Brawn) feet and deal 1d6 + Brawn damage</li>
+						<li><a href="../Adventuring Aid/generic-objects.html#sizes">Large objects</a> travel 5 x (1d4 + Brawn) feet and deal 1d8 + Brawn damage</li>
+					</ul>
+				</details>
+				
+				<a name="unarmed"></a>
 				<details>
 					<summary>Unarmed Combat</summary>
 					<p>Damage for an unarmed attack is a d4+Brawn</p>
