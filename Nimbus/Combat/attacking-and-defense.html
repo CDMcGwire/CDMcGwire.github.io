@@ -37,6 +37,7 @@
 					<ul>
 						<li><a href="#critical-rolls">Critical Rolls</a></li>
 						<li><a href="#weapon-damage">Weapon Damage</a></li>
+						<li><a href="#multi-hit">Multi-hit</a></li>
 					</ul>
 					<li><a href="#defense">Defense</a></li>
 					<ul>
@@ -44,6 +45,7 @@
 					</ul>
 					<li><a href="#health-and-healing">Health and Healing</a></li>
 					<ul>
+						<li><a href="#recuperation">In Combat Healing</a></li>
 						<li><a href="#hitting-zero">Dropping to Zero</a></li>
 						<li><a href="#death">Death</a></li>
 						<li><a href="#ooc-healing">Out of Combat Healing</a></li>
@@ -74,7 +76,6 @@
 					<li><strong>Failure:</strong> No Damage</li>
 					<li><strong>Partial Success:</strong> Half Damage</li>
 					<li><strong>Success:</strong> Full Damage</li>
-					<li><strong>Great Success:</strong> Double Damage</li>
 				</ul>
 				
 				<p>If the attack lands, you may then deal damage to the target. Roll the set of dice indicated by your weapon, add in any modifiers you have accumulated, then modify the total as indicated by the level of success.</p>
@@ -93,6 +94,13 @@
 					<p>Each weapon has a damage roll associated with. Most also have an associated attribute, which is then added directly into the roll total. Most melee weapons are based on strength, while a few are based on agility. Most ranged weapons to not have an attribute bonus, unless thrown.</p>
 				</details>
 				
+				<a name="multi-hit"></a>
+				<details>
+					<summary>Multi-Hit</summary>
+					<p>As a character gains proficiency in a weapon class, they will gain the ability to make <strong>multiple attacks in one turn</strong>. These attacks are at full damage and can be made on any target in-range, not just the first. The trade-off is that each attack in a hit-chain suffers an <strong>incremental -4 To-Hit</strong> penalty. For example: the first attack will suffer a -4, the second will be made at -8, and so on.</p>
+					<p>On top of that, unless otherwise stated, a multi-attack requires <strong>sacrificing a standard move action</strong>.</p>
+				</details>
+				
 			</section>
 			
 			<hr/>
@@ -100,8 +108,9 @@
 			<section>
 				<a name="defense"></a>
 				<h2>Defense</h2>
-				<p>To ward against attacks, there are two primary defenses: <strong>Armor</strong> and <strong>Agility</strong>. Both <strong>count as penalties to the attacker</strong>. Your Armor value is determined by what protective gear you are wearing, as well as any other passive protections whether natural or magical. Whereas your Agility is simply the attribute bonus.</p>
-				<p>To calculate defense when attacked, add up your Armor, Agility, and any other situational modifers, then subtract the total from the attacker's roll. As you might imagine, a negative defense total is a bonus to the attacker.</p>
+				<p>To ward against attacks, there are two primary defenses: <strong>Armor</strong> and <strong>Dodge Score</strong>. Your Armor value is determined by what protective gear you are wearing, as well as any other passive protections whether natural or magical. Whereas your Dodge Score is based on the Agility attribute as well as any special circumstances as the come up.</p>
+				<p><strong>Dodge</strong> comes into play when an attacker makes a To-Hit roll. When adding up an attacker's To-Hit bonuses, the target's Dodge Score is subtracted from the total as a penalty to the attacker.</p>
+				<p><strong>Armor</strong> comes into play when the attacker calculates damage. The target's armor value is subtracted from the attacker's total damage once per attack.</p>
 				
 				<a name="bypassing-defense"></a>
 				<details>
@@ -125,26 +134,34 @@
 			<section>
 				<a name="health-and-healing"></a>
 				<h2>Health and Healing</h2>
-				<p>Hit-points track a creature's health in an abstract way and should not be thought of as a linear scale of "how alive" something is. The following sections describe what happens when you lose hit-points and the primary methods of restoring them.</p>
+				<p>Hit-points (HP) track a creature's ability to stay in a fight in an abstract way and should not be thought of as a linear scale of "how alive" something is. More accurately, HP reflects a character's ability to maintain a guard. The following sections describe what happens when you lose hit-points and the primary methods of restoring them.</p>
+				
+				<a name="recuperation"></a>
+				<details>
+					<summary>In Combat Healing</summary>
+					<p>In the inevitable scenario that a character starts to run out of HP, that character may attempt to retract to a more favorable position and try to <strong>Recuperate</strong>. This takes the form a 1d4 roll, with the result adding to your current HP.</p>
+					<p>A recuperation roll may only be made if no hostile is within 20 feet, and it can not be made by a character who was the target of an attack on it's own turn.</p>
+				</details>
 				
 				<a name="hitting-zero"></a>
 				<details>
 					<summary>Dropping to Zero</summary>
-					<p>Positive hit-points represent a creature's ability to stay in fighting shape. Dropping to zero or lower hit points puts a creature into a wounded state. A wounded creature may no longer fight until they rest 12 hours for every point they drop below 0.</p>
-					<p>Standard healing methods can bring a creature back to positive, but common creatures, like humans and animals, will still require at least an hour of rest before they can fight again. Temporary hit-points, however, work like a shot of adrenaline and can put the recipient back into the fight, only to fall unconscious when temporary points wear off.</p>
+					<p>Positive hit-points represent a creature's ability to stay in fighting shape. Dropping to zero or lower hit points puts a creature into a <strong>wounded</strong> state. A wounded creature may not heal over half their maximum health until they rest for the day.</p>
+					<p>Standard healing methods can bring a creature back to positive, but they will remain unconscious until woken up forcibly. Temporary hit-points, however, work like a shot of adrenaline and can put the recipient back into the fight, only to fall unconscious when temporary points wear off.</p>
 					<p>Wounded creatures can attempt to crawl to safety on their turn by passing a Brawn roll. However, they are considered helpless and may be finished off by a further attack. In the case of surprise attacks, the attacker may elect to kill a target outright if the attack drops the target to 0 HP.</p>
 				</details>
 				
 				<a name="death"></a>
 				<details>
-					<summary>Death</summary>
-					<p>If a creature's HP equals negative half their max HP or lower, that creature is completely dead, regardless the cause of damage or whatever healing might be attempted. Only a miracle can save them at that point.</p>
+					<summary>Dying and Death</summary>
+					<p>If a creature's HP is equal to or less than the negative of half their max HP (on a creature with 20 HP, that would be -10 or lower), they become <strong>critically wounded</strong>. Even if brought back up to positive and woken up, they will be unable to physically exert themselves until they rest for a day. For one week of in-game time, they will be unable to heal above half of their max HP.</p>
+					<p>If a creature's HP equals the negative of their max HP or lower, that creature is completely <strong>dead</strong>, regardless the cause of damage or whatever healing might be attempted. Only a miracle can save them at that point.</p>
 				</details>
 				
 				<a name="ooc-healing"></a>
 				<details>
 					<summary>Out of Combat Healing</summary>
-					<p>After combat, a character may take a short rest (15 minutes in game time) to restore half of the hit points they lost in the last fight. They can also opt for a longer rest, restoring 25% of max health per in-game hour.</p>
+					<p>After combat, a character may take a short rest (15 minutes in game time) to restore half of the hit points they lost in the last fight. They can also opt to rest for an hour, restoring them to max HP.</p>
 				</details>
 			</section>
 			
