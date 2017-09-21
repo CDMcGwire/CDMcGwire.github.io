@@ -1,3 +1,16 @@
+// Establish mobile menu drawer functionality
+var drawerToggle = document.getElementById("menu-handle-toggle");
+var header = document.getElementById("menu");
+var menuInitial = header.style.bottom;
+drawerToggle.onclick = function() {
+  if (drawerToggle.checked) {
+    header.style.bottom = "0";
+  } else {
+    header.style.bottom = menuInitial;
+  }
+};
+
+
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 };
