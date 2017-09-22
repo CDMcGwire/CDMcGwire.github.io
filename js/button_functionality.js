@@ -1,12 +1,22 @@
 // Establish mobile menu drawer functionality
 var drawerToggle = document.getElementById("menu-handle-toggle");
+var drawerHandle = document.getElementById("menu-handle");
+var drawerImage = document.getElementById("menu-graphic")
 var header = document.getElementById("menu");
+
 var menuInitial = header.style.bottom;
+var baseColor = drawerHandle.style.backgroundColor;
+var selectedColor = "#FA0";
+
 drawerToggle.onclick = function() {
   if (drawerToggle.checked) {
     header.style.bottom = "0";
+    drawerHandle.style.backgroundColor = selectedColor;
+    drawerImage.style.transform = "rotate(180deg)";
   } else {
     header.style.bottom = menuInitial;
+    drawerHandle.style.backgroundColor = baseColor;
+    drawerImage.style.transform = "rotate(0deg)";
   }
 };
 
