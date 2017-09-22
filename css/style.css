@@ -244,6 +244,15 @@ nav li {
   
   font-size: 1em;
 }
+.container-content ul {
+  box-sizing: border-box;
+  margin: 6px 6px;
+  padding: 0 0 0 6px;
+  border-left: 2px solid #FA0;
+}
+.container-content li {
+  margin: 0 0 9px 0;
+}
 
 .container-header {
   box-sizing: border-box;
