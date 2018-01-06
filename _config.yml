@@ -1,0 +1,30 @@
+title: Connor McGwire
+description: >- # this means to ignore newlines until "baseurl:"
+  Professional programmer and hobby artist
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cdmcgwire.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: cdmcgwire
+github_username:  cdmcgwire
+
+collections:
+  projects:
+    output: true
+    permalink: pretty
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+-
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "default"
+    author: "Connor McGwire"
+    main_header: "Default"
+-
+  scope:
+    path: "images/"
+  values:
+    image: true
