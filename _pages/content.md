@@ -1,6 +1,8 @@
 ---
 title: Test Page
 main_header: "Test Page"
+date: Jan 6th, 2018
+excerpt: "This is a test page"
 ---
 {% capture test_content %}
 This is where any side comments would show!

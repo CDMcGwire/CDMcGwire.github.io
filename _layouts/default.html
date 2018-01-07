@@ -5,24 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href={% link css/style.css %} />
+  <link rel="stylesheet" href="{% link css/style.css %}" />
 </head>
 
 <body>
   <div class="container-main">
     <div class="top-banner"></div>
     <header id="menu">
-      <label id="menu-handle" for="menu-handle-toggle"><img id="menu-graphic" src={% link images/double_chevron.png %} alt="menu tab" /></label>
+      <label id="menu-handle" for="menu-handle-toggle"><img id="menu-graphic" src="{% link images/double_chevron.png %}" alt="menu tab" /></label>
       <input id="menu-handle-toggle" type="checkbox" />
-      <a id="home-link" href="#"><img src={% link images/placeholder_logo.png %} alt="" /></a>
+      <a id="home-link" href="{{ site.url }}"><img src="{% link images/placeholder_logo.png %}" alt="" /></a>
       <nav>
           <ul id="nav-items-right">
-            <li><a href="games_main.html">Games</a></li>
-            <li><a href="projects_main.html">Projects</a></li>
+            <li><a href="{% link _pages/games.md %}">Games</a></li>
+            <li><a href="{% link _pages/projects.md %}">Projects</a></li>
           </ul>
           <ul id="nav-items-left">
             <li><a href="https://www.linkedin.com/in/cdmcgwire">LinkedIn</a></li>
-            <li><a href="nimbus_main.html">Nimbus</a></li>
+            <li><a href="{% link _pages/nimbus.md %}">Nimbus</a></li>
           </ul>
         </nav>
     </header>
@@ -30,9 +30,12 @@
     <div class="container-content">
     <div class="container-content-banner">
       {% include content_header.html header=page.main_header %}
-      <section>
-        {{ content }}
-      </section>
+      <p id="page-timestamp">
+        {% if page.date %}
+        Last Updated: {{ page.date | date_to_long_string }}
+        {% endif %}
+      </p>
+      {{ content }}
     </div>
     </div>
       
