@@ -21,6 +21,23 @@ defaults:
 -
   scope:
     path: ""
+    type: "pages"
+  values:
+    layout: "default"
+    author: "Connor McGwire"
+    main_header: "Default"
+-
+  scope:
+    path: ""
+    type: "nimbus"
+  values:
+    layout: "default"
+    author: "Connor McGwire"
+    main_header: "Default"
+-
+  scope:
+    path: ""
+    type: "projects"
   values:
     layout: "default"
     author: "Connor McGwire"
