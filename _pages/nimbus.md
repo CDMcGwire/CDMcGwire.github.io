@@ -1,7 +1,7 @@
 ---
 title: Nimbus RPG
 main_header: "Nimbus RPG"
-date: Jan 7th, 2018
+date: Jan 13th, 2018
 excerpt: "A custom Pen and Paper RPG ruleset. It's a lightweight system that prefers narrative context over stat lines to inform the game mechanics."
 ---
 

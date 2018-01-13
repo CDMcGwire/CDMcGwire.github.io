@@ -1,4 +1,5 @@
 ---
+layout: "default"
 title: Character Creation
 main_header: "Character Creation"
 date: Jan 13th, 2018
