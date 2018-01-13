@@ -27,31 +27,39 @@ function isMobile() {
 
 
 // Setup comment bubble functionality
-var activeSideviewText = null;
+var activeSideviewTexts = null;
 var activeSideviewButton = null;
 var activeSideviewPhoto = null;
 function makeSideviewButtonCallback(button) {
-  var view = document.getElementById(button.value).parentNode;
+  var views = document.getElementsByClassName(button.value);
   var originalColor = button.style.backgroundColor;
+  var displayType = "block";
 
-  return function() {
-    if (activeSideviewText && activeSideviewText !== view) {
+  return function () {
+    if (activeSideviewTexts && (activeSideviewTexts !== views)) {
       activeSideviewButton.style.background = originalColor;
-      activeSideviewText.style.display = "none";
+      Array.prototype.forEach.call(views, view => {
+        activeSideviewText.style.display = "none"
+      });
     }
-
-    if (view.style.display === "inline-block") {
-      view.style.display = "none";
-      button.style.background = originalColor;
-      activeSideviewText = null;
+    if (views[0].style.display === displayType) {
+      activeSideviewTexts = null;
       activeSideviewButton = null;
     }
     else {
-      view.style.display = "inline-block";
-      button.style.background = "#7BB2FF"
-      activeSideviewText = view;
+      activeSideviewText = views[i];
       activeSideviewButton = button;
     }
+    Array.prototype.forEach.call(views, view => {
+      if (view.style.display === displayType) {
+        view.style.display = "none";
+        button.style.background = originalColor;
+      }
+      else {
+        view.style.display = displayType;
+        button.style.background = "#7BB2FF"
+      }
+    });
   }
 };
   

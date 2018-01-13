@@ -13,12 +13,22 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  nimbus:
+    output: true
+    permalink: /nimbus/:path
 
 defaults:
 -
   scope:
     path: ""
     type: "pages"
+  values:
+    layout: "default"
+    author: "Connor McGwire"
+    main_header: "Default"
+-
+  scope:
+    path: "/_nimbus"
   values:
     layout: "default"
     author: "Connor McGwire"
