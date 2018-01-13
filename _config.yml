@@ -21,14 +21,6 @@ defaults:
 -
   scope:
     path: ""
-    type: "pages"
-  values:
-    layout: "default"
-    author: "Connor McGwire"
-    main_header: "Default"
--
-  scope:
-    path: "_nimbus/"
   values:
     layout: "default"
     author: "Connor McGwire"
