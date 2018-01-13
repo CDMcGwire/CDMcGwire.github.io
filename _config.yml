@@ -28,7 +28,7 @@ defaults:
     main_header: "Default"
 -
   scope:
-    path: "/_nimbus"
+    path: "_nimbus/"
   values:
     layout: "default"
     author: "Connor McGwire"
