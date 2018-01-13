@@ -6,7 +6,7 @@ excerpt: "A custom Pen and Paper RPG ruleset. It's a lightweight system that pre
 ---
 
 [Quick Reference]({% link _nimbus/quick_reference.md %}){: .top-link }
-[Character Creation]({% link _nimbus/quick_reference.md %}){: .top-link }
+[Character Creation]({% link _nimbus/character_creation.md %}){: .top-link }
 
 ## Overview
 Nimbus is a pen and paper roleplaying game, similar to classic games like Dungeons and Dragons. If you're here, I'm assuming you're already familiar with RPGs and are looking for an alternative to classic systems, like Dungeons and dragons. The closest equivalent system I've found is the [FATE](https://fate-srd.com/) system. 
