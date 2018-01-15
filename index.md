@@ -16,6 +16,7 @@ Not a fan of wordy autobiographies, so here are some bullet points!
 * Mainly work in C# and C++ but I'm not picky
 * Created most of this site from scratch
 
-{% for page_i in site.pages %}
-{% include page_link.html url=page_i.url header=page_i.title content=page_i.excerpt %}
+{% for page in site.pages %}
+## [{{ page.title }}]({{ page.url }})
+{{ page.excerpt }}
 {% endfor %}

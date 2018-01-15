@@ -5,8 +5,7 @@ date: Jan 13th, 2018
 excerpt: "A custom Pen and Paper RPG ruleset. It's a lightweight system that prefers narrative context over stat lines to inform the game mechanics."
 ---
 
-[Quick Reference]({% link _nimbus/quick_reference.md %}){: .top-link }
-[Character Creation]({% link _nimbus/character_creation.md %}){: .top-link }
+{% include nimbus_nav.html %}
 
 ## Overview
 Nimbus is a pen and paper roleplaying game, similar to classic games like Dungeons and Dragons. If you're here, I'm assuming you're already familiar with RPGs and are looking for an alternative to classic systems, like Dungeons and dragons. The closest equivalent system I've found is the [FATE](https://fate-srd.com/) system. 
@@ -29,7 +28,7 @@ Nimbus is setting agnostic. The only limit is what the Game Master and players c
 
 There's also nothing stopping the use of other game settings and scenarios. The only important part is picking something the GM and group find interesting.
 
-## Character Creation
+## [Character Creation]({% link _nimbus/character_creation.md %})
 Character creation, unlike traditional systems, is a group activity and just as much a part of 'playing' the game as the main loop. The required details of a character are:
 * Name
 * Defining personality trait
@@ -41,5 +40,3 @@ Character creation, unlike traditional systems, is a group activity and just as 
 * Signature Ability
 
 For a more detailed explanation and examples, refer to the character creation page.
-
-[Character Creation]({% link _nimbus/character_creation.md %}){: .button-link }

@@ -1,7 +1,7 @@
 ---
 title: Quick Reference
 main_header: "Quick Reference"
-date: Jan 12th, 2018
+date: Jan 13th, 2018
 excerpt: "Essential rules and brief explanations where needed."
 ---
 

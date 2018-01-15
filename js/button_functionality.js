@@ -30,7 +30,7 @@ function isMobile() {
 var activeSideviewTexts = null;
 var activeSideviewButton = null;
 var activeSideviewPhoto = null;
-function makeSideviewButtonCallback(button) {
+function makeCollapseableButtonCallback(button) {
   var views = document.getElementsByClassName(button.value);
   var originalColor = button.style.backgroundColor;
   var displayType = "block";
@@ -68,7 +68,7 @@ var textButtons = document.getElementsByClassName("button-context");
 for (var i = 0; i < textButtons.length; i++) {
   var button = textButtons[i];
 
-  textButtons[i].onclick = makeSideviewButtonCallback(button);
+  textButtons[i].onclick = makeCollapseableButtonCallback(button);
 }
 
 
@@ -84,13 +84,13 @@ if (!isMobile()) {
 
     return function() {
       if (activeImage && button.value === activeImage) return;
-      console.log("replacing image");
+      console.log("replacing image " + button.value);
 
       var cleared = imageContainer.cloneNode(false);
       parent.replaceChild(cleared, imageContainer);
       imageContainer = cleared;
 
-      imageContainer.appendChild(image.cloneNode(false));
+      imageContainer.appendChild(image.cloneNode(true));
       activeImage = image;
     };
   };
@@ -100,7 +100,7 @@ if (!isMobile()) {
   for (var i = 0; i < imgButtons.length; i++) {
     var button = imgButtons[i];
     var image = document.getElementById(button.value);
-    console.log("adding function");
+    console.log("Setting up Image Button for " + button.value);
     
     imgButtons[i].onclick = makeImageButtonCallback(button);
     if (imgButtons.length > 0) imgButtons[0].onclick.apply(imgButtons[0]);
