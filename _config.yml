@@ -5,17 +5,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cdmcgwire.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cdmcgwire
 github_username:  cdmcgwire
+exclude: ['defunct-pages']
 
 collections:
-  projects:
-    output: true
-    permalink: pretty
   pages:
     output: true
-    permalink: /:path/
-  nimbus:
+    permalink: /:path
+  projects:
     output: true
-    permalink: /nimbus/:path
+    permalink: /projects/:path
+  test:
+    output: true
+    permalink: /test/:path
 
 defaults:
 -
@@ -23,25 +24,17 @@ defaults:
     path: ""
     type: "pages"
   values:
-    layout: "default"
+    layout: "page"
     author: "Connor McGwire"
-    main_header: "Default"
--
-  scope:
-    path: ""
-    type: "nimbus"
-  values:
-    layout: "nimbus"
-    author: "Connor McGwire"
-    main_header: "Default"
+    excerpt_separator: <!--EndExcerpt-->
 -
   scope:
     path: ""
     type: "projects"
   values:
-    layout: "default"
+    layout: "page"
     author: "Connor McGwire"
-    main_header: "Default"
+    excerpt_separator: <!--EndExcerpt-->
 -
   scope:
     path: "images/"

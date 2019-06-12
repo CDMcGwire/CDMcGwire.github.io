@@ -1,11 +1,7 @@
-<header class="content-header">
-  {% if include.link %}
-  <h1><a href="{{ include.link }}">{{ include.title }}</a></h1>
-  {% else %}
+<header class="page-header">
   <h1>{{ include.title }}</h1>
-  {% endif %}
   {% if include.date %}
-  <time datetime="{{ include.date }}">{{ include.date | date: "%A, %B %-d" }}</time>
+  <time datetime="{{ include.date }}">Last Update: {{ include.date | date: "%A, %B %-d" }}</time>
   {% endif %}
   {% if include.end %}
   <time>{{ include.start }} - {{ include.end }}</time>

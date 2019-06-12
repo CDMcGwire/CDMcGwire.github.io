@@ -5,7 +5,8 @@
 		}
 	],
 	"settings": {
-		"editor.tabSize": 2,
-		"editor.detectIndentation": true
+		"editor.tabSize": 3,
+		"editor.detectIndentation": true,
+		"editor.insertSpaces": false
 	}
 }

@@ -1,6 +1,5 @@
 ---
 title: Character Creation
-main_header: "Character Creation"
 date: Jan 13th, 2018
 excerpt: "Explanation of the character creation process."
 ---
@@ -23,7 +22,7 @@ Your character needs a minimum set of details:
 * **Signature Move**
   * That special trick of yours
 
-{% include collapseable.html tag="gm-note-01" button_text="GM Note" %}
+{% include collapsible.html tag="gm-note-01" button_text="GM Note" %}
 
 <div markdown="1" class="collapseable-section gm-note-01" >
 It is suggested that you have the players go through each detail one at a time, as a group. For instance, everyone takes turns comming up with and announcing their main personality trait, then everyone takes turns with their flaws, and so on. Players should be encouraged to comment on other's ideas and give suggestions, as long as they're being respectful.
@@ -54,7 +53,7 @@ Players create their abilites themselves, with the only rule being that the GM m
 * *I can kill everyone I see before they can react.*
   * This is a poor ability in 99% of scenarios because it is simply too powerful and has no interesting interactions unless every other character and NPC is equally powerful.
 
-{% include collapseable.html tag="gm-note-02" button_text="GM Note" %}
+{% include collapsible.html tag="gm-note-02" button_text="GM Note" %}
 
 <div markdown="1" class="collapseable-section gm-note-02" >
 If a player gives an ability that is too vague or powerful, don't just shut it down, try to suggest conditions and details that would make it work. The player will either enjoy the suggestions and add them, or they'll make come up with something else as they decide that the idea isn't as great as they thought.

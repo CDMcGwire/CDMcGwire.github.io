@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% if page.end %}
+{% include page_header.html title=page.title start=page.start end=page.end summary=page.summary %}
+{% else %}
+{% include page_header.html title=page.title date=page.date summary=page.summary %}
+{% endif %}
+<section class="page-content col">
+	<article>
+		{{ content }}
+		<footer>
+			<!-- TODO: Figure out what should go in the footer. -->
+		</footer>
+	</article>
+</section>

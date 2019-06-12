@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{% link css/style.css %}" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="{% link css/style.css %}" />
 </head>
 
 <body>
-  <div class="container-main">
-    <div class="top-banner"></div>
-    <header id="menu">
-      <label id="menu-handle" for="menu-handle-toggle"><img id="menu-graphic" src="{% link images/double_chevron.png %}" alt="menu tab" /></label>
-      <input id="menu-handle-toggle" type="checkbox" />
-      <a id="home-link" href="{{ site.url }}"><img src="{% link images/placeholder_logo.png %}" alt="" /></a>
-      <nav>
-          <ul id="nav-items-right">
-            <li><a href="{% link _pages/games.md %}">Games</a></li>
-            <li><a href="{% link _pages/projects.md %}">Projects</a></li>
-          </ul>
-          <ul id="nav-items-left">
-            <li><a href="https://www.linkedin.com/in/cdmcgwire">LinkedIn</a></li>
-            <li><a href="{% link _pages/nimbus.md %}">Nimbus</a></li>
-          </ul>
-        </nav>
-    </header>
-    
-    <div class="container-content">
-    <div class="container-content-banner">
-      {% include content_header.html header=page.main_header %}
-      <p id="page-timestamp">
-        {% if page.date %}
-        Last Updated: {{ page.date | date_to_long_string }}
-        {% endif %}
-      </p>
-      
-      {{ content }}
-    </div>
-    </div>
-      
-    <div id="container-sideview">
-    </div>
-  </div>
-  
-    <script src={% link js/button_functionality.js %}></script>
-
+	<div id="main-wrapper" class="col">
+		<nav class="row align-start wrap-mobile passthrough">
+			<a class="logo-container center-all catch" href="{{ site.url }}">
+				<img class="logo-image" src="{% link images/placeholder_logo.png %}" alt="Home" />
+			</a>
+			<div class="col nav-center-div fill">
+				<ul class="row wrap nav-list catch">
+					<li class="nav-entry col"><a href="{% link _pages/projects.md %}">Projects</a></li>
+					<li class="nav-entry col"><a href="{% link _pages/games.md %}">Games</a></li>
+				</ul>
+				<ul class="row wrap trail catch">
+					{% assign page_hierarchy = page.url | split:"/" %}
+					{% assign relative_path = '' %}
+					{% for parent in page_hierarchy %}
+					{% if forloop.last %}
+					<li class="trail-entry row"><span>{{ page_hierarchy | last }}</span></li>
+					{% else %}
+					{% assign relative_path = relative_path | append:parent | append:"/" %}
+					<li class="trail-entry row"><a href="{{ relative_path | absolute_url }}">{{ parent }}/</a></li>
+					{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			<ul class="row-rev wrap-desktop social-list catch">
+				<li class="social-entry">
+					<a class="center-all" href="https://www.linkedin.com/in/cdmcgwire">
+						<img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-2-icon-18-256.png" alt="LinkedIn Profile" />
+					</a>
+				</li>
+				<li class="social-entry">
+					<a class="center-all" href="#">
+						<img src="https://www.smartinterviews.in/assets/images/hackerrank_icon.png" alt="Hackerrank Profile" />
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<main class="col">
+			{{ content }}
+		</main>
+	</div>
+	<script src={% link js/button_functionality.js %}></script>
 </body>
+
 </html>
