@@ -9,47 +9,45 @@
 	<link rel="stylesheet" href="{% link css/style.css %}" />
 </head>
 
-<body>
-	<div id="main-wrapper" class="col">
-		<nav class="row align-start wrap-mobile passthrough">
-			<a class="logo-container center-all catch" href="{{ site.url }}">
-				<img class="logo-image" src="{% link images/placeholder_logo.png %}" alt="Home" />
-			</a>
-			<div class="col nav-center-div fill">
-				<ul class="row wrap nav-list catch">
-					<li class="nav-entry col"><a href="{% link _pages/projects.md %}">Projects</a></li>
-					<li class="nav-entry col"><a href="{% link _pages/games.md %}">Games</a></li>
-				</ul>
-				<ul class="row wrap trail catch">
-					{% assign page_hierarchy = page.url | split:"/" %}
-					{% assign relative_path = '' %}
-					{% for parent in page_hierarchy %}
-					{% if forloop.last %}
-					<li class="trail-entry row"><span>{{ page_hierarchy | last }}</span></li>
-					{% else %}
-					{% assign relative_path = relative_path | append:parent | append:"/" %}
-					<li class="trail-entry row"><a href="{{ relative_path | absolute_url }}">{{ parent }}/</a></li>
-					{% endif %}
-					{% endfor %}
-				</ul>
-			</div>
-			<ul class="row-rev wrap-desktop social-list catch">
-				<li class="social-entry">
-					<a class="center-all" href="https://www.linkedin.com/in/cdmcgwire">
-						<img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-2-icon-18-256.png" alt="LinkedIn Profile" />
-					</a>
-				</li>
-				<li class="social-entry">
-					<a class="center-all" href="#">
-						<img src="https://www.smartinterviews.in/assets/images/hackerrank_icon.png" alt="Hackerrank Profile" />
-					</a>
-				</li>
+<body class="col center-main">
+	<nav class="row center-cross wrap-mobile passthrough">
+		<a class="logo-container center-all catch" href="{{ site.url }}">
+			<img class="logo-image" src="{% link images/placeholder_logo.png %}" alt="Home" />
+		</a>
+		<div class="col nav-center-div">
+			<ul class="row wrap nav-list catch">
+				<li class="nav-entry col"><a href="{% link _pages/projects.md %}">Projects</a></li>
+				<li class="nav-entry col"><a href="{% link _pages/games.md %}">Games</a></li>
 			</ul>
-		</nav>
-		<main class="col">
-			{{ content }}
-		</main>
-	</div>
+			<ul class="row wrap trail catch">
+				{% assign page_hierarchy = page.url | split:"/" %}
+				{% assign relative_path = '' %}
+				{% for parent in page_hierarchy %}
+				{% if forloop.last %}
+				<li class="trail-entry row"><span>{{ page_hierarchy | last }}</span></li>
+				{% else %}
+				{% assign relative_path = relative_path | append:parent | append:"/" %}
+				<li class="trail-entry row"><a href="{{ relative_path | absolute_url }}">{{ parent }}/</a></li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		<ul class="row-rev wrap-desktop social-list catch">
+			<li class="social-entry">
+				<a class="center-all" href="https://www.linkedin.com/in/cdmcgwire">
+					<img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-2-icon-18-256.png" alt="LinkedIn Profile" />
+				</a>
+			</li>
+			<li class="social-entry">
+				<a class="center-all" href="#">
+					<img src="https://www.smartinterviews.in/assets/images/hackerrank_icon.png" alt="Hackerrank Profile" />
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<main class="col center-main">
+		{{ content }}
+	</main>
 	<script src={% link js/button_functionality.js %}></script>
 </body>
 

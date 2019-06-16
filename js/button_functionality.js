@@ -35,3 +35,18 @@ for (var span of document.querySelectorAll(".context-span")) {
 for (var button of document.querySelectorAll(".context-button")) {
 	button.onclick = makeCollapseableButtonCallback(button);
 }
+
+// Setup feature-list grid
+for (let list of document.querySelectorAll("ul.feature-list")) {
+	let listings = list.querySelectorAll("ul.feature-list>li");
+	let active = listings[0];
+	active.classList.add("selected");
+	for (let listing of listings) {
+		listing.onclick = () => {
+			if (active == listing) return;
+			active.classList.remove("selected");
+			active = listing;
+			active.classList.add("selected");
+		}
+	}
+}

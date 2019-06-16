@@ -7,7 +7,6 @@
 /* Global Styling */
 
 * {
-  /* I design for explicit spacing only. */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,29 +29,16 @@ code {
 
 body {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
   color: white;
-  background-color: #2564f7;
-}
-
-#main-wrapper {
-  flex: 1 1 auto;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 940px) {
-  #main-wrapper {
-    flex: 0 0 920px;
-  }
+  background-color: hsl(222, 93%, 56%);
 }
 
 @media screen and (min-width: 720px) {
   html {
     font-size: 16pt;
-  }
-  #main-wrapper {
-    margin: 0 20px 0 20px;
   }
 }
 
@@ -68,30 +54,27 @@ li {
   list-style: none inside;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   object-fit: contain;
 }
 
 a {
-  color: #5285fa;
+  text-decoration: none;
+  color: hsl(37, 100%, 65%);
   transition: color .2s, opacity .2s;
 }
 
 a:hover {
-  color: #2f5abd;
+  color: hsl(37, 80%, 50%);
 }
 
 a:active {
-  color: #2f5abd;
+  color: hsl(37, 100%, 65%);
   opacity: .5;
 }
 
-p a:visited:not(.button-link) {
-  color: #9352fa;
+p>a:visited:not(.button-link) {
+  color: hsl(37, 28%, 47%);
 }
 
 time {
@@ -101,19 +84,23 @@ time {
 /* page-content spacing */
 
 h1 {
-  margin-top: 2rem;
+  margin-top: 2.8rem;
 }
 
 h2 {
-  margin-top: 1rem;
+  margin-top: 2.4rem;
 }
 
 h3, h4, h5, h6 {
-  margin-top: .8rem;
+  margin-top: 2.25rem;
+}
+
+h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
+  margin-top: 1.5rem;
 }
 
 p {
-  margin-top: 1.2rem;
+  margin-top: 2rem;
 }
 
 header>p {
@@ -129,11 +116,11 @@ header+p, h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
 }
 
 .page-content ul, .page-content .highlighter-rouge {
-  margin-top: .2rem;
+  margin-top: .8rem;
 }
 
 .page-content ul+ul, .page-content .highlighter-rouge+.highlighter-rouge {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 article:first-child, header:first-child, h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
@@ -145,6 +132,10 @@ p:first-child, .page-content ul:first-child, .page-content .highlighter-rouge:fi
 }
 
 /* Navigation Styling */
+
+nav {
+  width: 100%;
+}
 
 .logo-container {
   order: 1;
@@ -182,6 +173,22 @@ p:first-child, .page-content ul:first-child, .page-content .highlighter-rouge:fi
 
 .nav-center-div {
   order: 3;
+  flex: 1 0 100%;
+}
+
+nav li {
+  padding: 0;
+  border: none;
+}
+
+nav li:nth-of-type(even) {
+  border: none;
+}
+
+.nav-list {
+  width: auto;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .nav-entry>a {
@@ -212,6 +219,8 @@ p:first-child, .page-content ul:first-child, .page-content .highlighter-rouge:fi
 .social-list {
   order: 2;
   flex: 1 1 40px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .social-entry {
@@ -249,7 +258,7 @@ p:first-child, .page-content ul:first-child, .page-content .highlighter-rouge:fi
   }
   .nav-center-div {
     order: 2;
-    flex: 1 1 100%;
+    flex: 0 1 800px;
   }
   .nav-entry>a {
     margin: 9px 3px 3px 3px;
@@ -263,6 +272,9 @@ p:first-child, .page-content ul:first-child, .page-content .highlighter-rouge:fi
 
 .trail {
   margin: 0px 3px 6px 3px;
+  width: auto;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .trail-entry>a {
@@ -294,7 +306,60 @@ p:first-child, .page-content ul:first-child, .page-content .highlighter-rouge:fi
 
 /* Content Styling */
 
-main>header {
+main {
+  flex: 0 1 auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main>section {
+  width: 100%;
+}
+
+main>section>article {
+  width: 100%;
+}
+
+main>* {
+  max-width: 100%;
+}
+
+.page-header, .content-header, p, h1, h2, h3, h4, h5, h6, ul, div.highlighter-rouge {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+li>ul {
+  width: auto;
+}
+
+p {
+  padding-right: 40px;
+}
+
+@media screen and (min-width: 960px) {
+  .page-header, .content-header, p, h1, h2, h3, h4, h5, h6, div.highlighter-rouge {
+    width: 900px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  ul {
+    width: 888px;
+    margin-right: 12px;
+  }
+  li>ul {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  p {
+    padding-right: 160px;
+  }
+}
+
+.page-header {
   padding: 9px 0 24px 0;
   color: white;
 }
@@ -302,36 +367,26 @@ main>header {
 header>time {
   display: block;
   margin: 0.2em 0 0.3em 0;
+  padding: 0 40px 0 12px;
   font-size: 0.7em;
 }
 
 .page-header>h1 {
-  margin: 0 12px 3px 12px;
+  margin: 0 0 3px 0;
   font-size: 1.9em;
 }
 
-.page-header>time {
-  margin: 0.2em 24px 0.3em 12px;
-}
-
 .page-header>p {
-  margin: 0 36px 0px 12px;
   font-size: 1.1em;
-  line-height: 1.35;
-}
-
-.page-content {
-  padding: 24px 48px 36px 12px;
-  color: hsl(221, 63%, 14%);
-  background-color: hsl(27, 15%, 90%);
-  border-bottom: solid 12px rgba(0, 0, 0, 0.06);
 }
 
 .content-header {
-  padding: 0.45em 48px 0.45em 12px;
-  margin: 2rem -48px .5rem -12px;
-  background-color: rgba(0, 0, 0, 0.06);
-  box-shadow: inset 0 5px 9px -8px black, inset 0 -5px 9px -8px black;
+  padding: 0.45em 0 0.45em 0;
+  margin: 2rem 0 .5rem 0;
+}
+
+.page-content {
+  background-color: hsl(222, 83%, 53%)
 }
 
 h1 {
@@ -350,19 +405,18 @@ h4, h5, h6 {
   font-size: 1.15em;
 }
 
-.page-content p {
+p {
   font-size: 1.05em;
-  line-height: 1.35;
+  line-height: 1.65;
 }
 
-.page-content ul {
-  margin-right: -48px;
+li {
+  padding: 0 60px .4rem 9px;
+  border-left: solid 3px rgba(0, 0, 0, 0.24);
 }
 
-.page-content li:not(.link-entry) {
-  padding: 0 24px .4rem 9px;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-left: solid 3px rgba(0, 0, 0, 0.12);
+li+li {
+  margin-top: 6px;
 }
 
 li>ul {
@@ -370,32 +424,19 @@ li>ul {
   margin-bottom: -.4rem;
 }
 
-.page-content li:nth-of-type(even) {
-  background-color: rgba(255, 255, 255, 0.6);
+li:nth-of-type(even) {
+  border-left: solid 3px rgba(0, 0, 0, 0.12);
 }
 
 /* I'm suspicious of the performance of this, but profiling doesn't show anything interesting yet. */
 
-.page-content li:nth-of-type(odd) li:nth-of-type(odd) {
-  background-color: rgba(255, 255, 255, 0.6);
-}
+/* .page-content li:nth-of-type(odd) li:nth-of-type(odd) {}
 
-.page-content li:nth-of-type(odd) li:nth-of-type(even) {
-  background-color: rgba(0, 0, 0, 0.03);
-}
+.page-content li:nth-of-type(odd) li:nth-of-type(even) {}
 
-.page-content li:nth-of-type(even) li:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.03);
-}
+.page-content li:nth-of-type(even) li:nth-of-type(odd) {}
 
-.page-content li:nth-of-type(even) li:nth-of-type(even) {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-ul.link-list {
-  margin-left: -12px;
-  margin-right: -48px;
-}
+.page-content li:nth-of-type(even) li:nth-of-type(even) {} */
 
 li.link-entry {
   padding: .2rem 24px .2rem 9px;
@@ -437,26 +478,20 @@ li.link-entry {
 }
 
 div.highlighter-rouge {
-  margin-right: -48px;
   padding: 0 24px 0 9px;
   overflow-x: auto;
-  background-color: rgba(0, 0, 0, 0.06);
-  border-left: solid 3px rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.12);
+  border-left: solid 3px rgba(0, 0, 0, 0.24);
 }
 
 div.highlight {
-  padding: .3em 0 .3em 0;
+  padding: .3em 0;
   width: 100%;
 }
 
 div>pre>code {
   display: inline-block;
   padding-right: 36px;
-}
-
-.page-content .container-video {
-  margin-left: -12px;
-  margin-right: -48px;
 }
 
 .button-link {
@@ -484,19 +519,15 @@ div>pre>code {
   margin-top: 5em;
 }
 
+.notice {
+  padding: 12px 9px;
+  background-color: rgba(255, 255, 255, .25);
+  border-radius: 6px;
+}
+
 @media screen and (min-width: 720px) {
   .page-header>h1 {
-    margin: 0 0 3px 0;
     font-size: 2.8em;
-  }
-  .page-header>time {
-    margin: 0.2em 24px 0.3em 0;
-  }
-  .page-header>p {
-    margin: 0 24px 0 0;
-  }
-  .page-content {
-    margin-bottom: 80px;
   }
   h1 {
     font-size: 2.6em;
@@ -515,54 +546,125 @@ div>pre>code {
   }
 }
 
-/* Functionality */
+/* Feature list styling */
+
+ul.feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+ul.feature-list>li {
+  padding: 6px 9px;
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid white;
+  transition: background-color .2s, border-color .6s, color .6s;
+}
+
+ul.feature-list>li+li {
+  margin-top: 0;
+}
+
+ul.feature-list>li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+ul.feature-list>li:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+ul.feature-list>li>ul {
+  display: none;
+}
+
+ul.feature-list>li.selected {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  padding: 0 40px 12px 9px;
+  cursor: auto;
+  white-space: normal;
+  font-size: 1.3rem;
+  background-color: transparent;
+  transition: background-color .6s, border-color .6s, color .6s;
+}
+
+ul.feature-list>li.selected>ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+  /*  :)  I'm not sorry for this selector. Jekyll made me do it. */
+
+ul.feature-list>li.selected>ul>li {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  border: none;
+}
+
+@media screen and (min-width: 960px) {
+  ul.feature-list {
+    display: grid;
+    grid-template-columns: repeat(5, calc((900px - (6px * 4)) / 5));
+    padding: 0;
+  }
+}
+
+/* Functionality styles */
 
 .context-button {
   display: inline;
   padding: 2px 8px;
+  color: white;
   background-color: transparent;
-  border: solid 2px black;
+  border: solid 2px white;
   border-radius: 9999px;
   font-size: 1em;
   font-family: "Raleway", sans-serif;
-  transition: color .3s, background-color .3s, border-color .3s;
+  transition: color .2s, background-color .2s, border-color .15s, font-weight .2s;
 }
 
 .context-button:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.25);
   border-color: transparent;
 }
 
 .context-button:active {
-  color: white;
-  background-color: #5c8cfa;
-  border-color: #5c8cfa;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
 }
 
 .context-span {
   display: none;
-  padding: 6px 48px 6px 12px;
-  margin: 6px -48px 6px -12px;
+  padding: 6px 12px;
+  margin: 6px 0;
   font-size: 0.9em;
-  background: rgba(0, 0, 0, 0.06);
-  box-shadow: inset 0 5px 9px -8px black, inset 0 -5px 9px -8px black;
+  word-wrap: break-word;
+  color: hsl(222, 93%, 56%);
+  background-color: white;
+  border-radius: 6px;
   z-index: 900;
 }
 
 button.context-active {
-  color: white;
-  background-color: #2564f7;
-  border-color: #2564f7;
+  font-weight: bold;
+  color: hsl(222, 93%, 56%);
+  background-color: white;
+  border-color: white;
 }
 
 button.context-active:hover {
-  background-color: #5c8cfa;
-  border-color: #5c8cfa;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: transparent;
 }
 
 button.context-active:active {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   border-color: transparent;
 }
 
