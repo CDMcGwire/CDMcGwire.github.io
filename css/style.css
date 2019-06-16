@@ -131,6 +131,10 @@ p:first-child, .page-content ul:first-child, .page-content .highlighter-rouge:fi
   margin-top: 0;
 }
 
+footer {
+  margin-top: 3rem;
+}
+
 /* Navigation Styling */
 
 nav {
@@ -179,6 +183,10 @@ nav {
 nav li {
   padding: 0;
   border: none;
+}
+
+nav li+li {
+  margin-top: 0;
 }
 
 nav li:nth-of-type(even) {
@@ -386,7 +394,8 @@ header>time {
 }
 
 .page-content {
-  background-color: hsl(222, 83%, 53%)
+  margin-bottom: 6rem;
+  background-color: hsl(222, 83%, 53%);
 }
 
 h1 {
@@ -597,7 +606,7 @@ ul.feature-list>li.selected>ul {
   padding: 0;
 }
 
-  /*  :)  I'm not sorry for this selector. Jekyll made me do it. */
+/*  :)  I'm not sorry for this selector. Jekyll made me do it. */
 
 ul.feature-list>li.selected>ul>li {
   margin: 0;
