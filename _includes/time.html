@@ -1,0 +1,6 @@
+{% if include.date %}
+<time datetime="{{ include.date }}">{{ include.date | date: "%A, %B %-d" }}</time>}
+{% endif %}
+{% if include.end %}
+<time>{{ include.start }} - {{ include.end }}</time>
+{% endif %}

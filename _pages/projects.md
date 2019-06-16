@@ -7,6 +7,7 @@ summary: >-
 
 {% assign projects = site.projects | sort: 'date' %}
 {% for project in projects reversed %}
-{% include content_header.html title=project.title start=project.start end=project.end link=project.url %}
+# [{{ project.title }}]({{ project.url }})
+{% include time.html start=project.start end=project.end %}
 {{ project.excerpt }}
 {% endfor %}

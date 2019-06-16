@@ -37,6 +37,14 @@ defaults:
     excerpt_separator: <!--EndExcerpt-->
 -
   scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "page"
+    author: "Connor McGwire"
+    excerpt_separator: <!--EndExcerpt-->
+-
+  scope:
     path: "images/"
   values:
     image: true

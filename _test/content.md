@@ -5,8 +5,6 @@ date: Jan 6th, 2018
 summary: "This is a test page"
 ---
 
-{% include content_header.html title='Header 1' date='Jan 1st, 2000 8:00pm' summary='Here is a summary for a content header.' %}
-
 {% capture comment %}
 *ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*
 {% endcapture %}
