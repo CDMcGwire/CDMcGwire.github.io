@@ -33,7 +33,7 @@ body {
   align-content: center;
   width: 100%;
   color: white;
-  background-color: hsl(222, 93%, 56%);
+  background-color: hsl(222, 76%, 54%);
 }
 
 @media screen and (min-width: 720px) {
@@ -66,25 +66,16 @@ main a {
   color: white;
   padding-left: 3px;
   padding-right: 3px;
-  border-left: 3px solid hsl(30, 94%, 57%);
-  background-color: rgba(255, 255, 255, .1);
-  transition: color .2s, border-color .2s, background-color .2s;
+  color: hsl(30, 100%, 65%);
+  transition: color .2s;
 }
 
 main a:hover {
   color: hsl(30, 100%, 75%);
-  border-left: 3px solid hsl(30, 100%, 68%);
-  background-color: rgba(255, 255, 255, .4);
 }
 
 main a:active {
-  color: hsl(30, 100%, 75%);
-  border-left: 3px solid hsl(30, 100%, 75%);
-  background-color: rgba(255, 255, 255, .7);
-}
-
-p>a:visited:not(.button-link) {
-  border-left: 3px solid hsl(37, 28%, 47%);
+  color: hsl(30, 100%, 85%);
 }
 
 time {
@@ -405,7 +396,7 @@ header>time {
 
 .page-content {
   margin-bottom: 6rem;
-  background-color: hsl(222, 83%, 53%);
+  background-color: hsl(222, 64%, 41%);
 }
 
 h1 {
@@ -431,7 +422,11 @@ p {
 
 li {
   padding: 0 60px .4rem 9px;
-  border-left: solid 3px rgba(0, 0, 0, 0.24);
+  border-left: solid 3px rgba(255, 255, 255, 0.5);
+}
+
+li:nth-of-type(even) {
+  border-left: solid 3px rgba(255, 255, 255, 0.25);
 }
 
 li+li {
@@ -442,20 +437,6 @@ li>ul {
   padding-top: .4rem;
   margin-bottom: -.4rem;
 }
-
-li:nth-of-type(even) {
-  border-left: solid 3px rgba(0, 0, 0, 0.12);
-}
-
-/* I'm suspicious of the performance of this, but profiling doesn't show anything interesting yet. */
-
-/* .page-content li:nth-of-type(odd) li:nth-of-type(odd) {}
-
-.page-content li:nth-of-type(odd) li:nth-of-type(even) {}
-
-.page-content li:nth-of-type(even) li:nth-of-type(odd) {}
-
-.page-content li:nth-of-type(even) li:nth-of-type(even) {} */
 
 li.link-entry {
   padding: .2rem 24px .2rem 9px;
@@ -518,20 +499,23 @@ div>pre>code {
   margin: 3px 6px 9px 0;
   padding: 3px 6px;
   color: white;
-  background-color: hsl(222, 94%, 65%);
-  border-radius: .2rem;
-  transition: background-color .3s;
+  border-left: 3px solid hsl(30, 94%, 57%);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color .2s, border-color .2s;
+}
+
+.button-link::after {
+  content: none;
 }
 
 .button-link:hover {
-  color: white;
-  background-color: hsl(222, 46%, 46%);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: hsl(30, 100%, 68%);
 }
 
 .button-link:active {
-  color: black;
-  background-color: white;
-  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: hsl(30, 100%, 75%);
 }
 
 .page-content>footer {
@@ -789,11 +773,20 @@ span.context-active {
   flex: 1 1 0%;
 }
 
+.video-backdrop {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .4) 25%, rgba(0, 0, 0, .4) 75%, rgba(0, 0, 0, .3));
+}
+
+.container-video {
+  width: 1100px;
+}
+
 .container-video16x9 {
   position: relative;
   padding-bottom: 56.25%;
-  margin-top: 20px;
-  margin-bottom: 40px;
   height: 0;
   overflow: hidden;
 }
