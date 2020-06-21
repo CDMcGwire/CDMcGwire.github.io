@@ -1,8 +1,8 @@
-# Jekyll ignores
-_site
-.sass-cache
-.jekyll-metadata
-
-# VS Code ignores
-.vscode
-*.code-workspace
+*.log
+.cache
+.DS_Store
+src/.temp
+node_modules
+dist
+.env
+.env.*
