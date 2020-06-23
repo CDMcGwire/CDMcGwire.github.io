@@ -3,7 +3,7 @@
     <ul>
       <li v-for="entry in filterCollection(directory, path)" :key="entry" class="col">
         <g-link :to="entry.path"><h2>{{ entry.title }}</h2></g-link>
-        <span class="date">{{ entry.start }} - {{ entry.end }}</span>
+        <span class="details">[ <span v-if="entry.organization">{{ entry.organization }} : </span>{{ entry.start }} - {{ entry.end }} ]</span>
         <p>{{ entry.excerpt }}</p>
       </li>
     </ul>
@@ -32,7 +32,7 @@ export default {
 @import "../styles/colors.styl"
 
 p
-  margin-bottom 2ex
+  margin-bottom 4ex
 p + h2
   margin-top 3ex
 h2
@@ -48,10 +48,11 @@ a
   color accent-link
 a:hover
   color accent-pri
-.date
+.details
+  margin -1.5ex -2ch 0.5ex 0
   align-self flex-end
   font-size 0.75em
-  font-weight bold
+  color accent-dark
 </style>
 
 <static-query>
@@ -62,6 +63,7 @@ query ($path: String) {
         title
         path
         excerpt
+        organization
         start
         end
         fileInfo {

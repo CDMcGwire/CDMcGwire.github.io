@@ -34,8 +34,8 @@ export default {
   align-items flex-end
   width 100%
   height 200px
-  padding-top 1ex
-  padding-bottom 10px
+  padding-top 10ex
+  padding-bottom 15ex
   overflow hidden
   overflow-wrap break-word
 
@@ -43,16 +43,19 @@ export default {
   background-color accent-pri
 
   h1
-    font-size 4.5em
+    font-size 4em
     line-height 1em
     @media screen and (max-width: content-width)
       font-size 2.5em
 
   @media screen and (max-width: content-width)
     height auto
+    padding-top 6ex
+    padding-bottom 8ex
     p
       font-size 0.8em
       line-height 1.2
+      padding-right 35%
 
 header
   flex 0 1 content-width
@@ -63,7 +66,7 @@ header
 .container
   box-sizing border-box
   width content-width + 100px
-  padding 30px 50px 40px 50px
+  padding 30px 50px 60px 50px
   background-color background
   @media screen and (max-width: content-width)
     width 100%

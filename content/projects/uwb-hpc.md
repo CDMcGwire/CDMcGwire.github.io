@@ -1,8 +1,9 @@
 ---
-title: "UW Bothell - General Purpose GPU Research"
+title: General Purpose GPU Research
+organization: UW Bothell
 date: January 2016
-start: "January 2016"
-end: "June 2016"
+start: January 2016
+end: June 2016
 excerpt: >-
   At the University of Washington Bothell campus, I participated in
   Undergraduate Research to help develop class materials for a Graduate level

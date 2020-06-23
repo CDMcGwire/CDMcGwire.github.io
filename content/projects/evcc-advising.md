@@ -1,8 +1,9 @@
 ---
-title: "EvCC - Automated Advising"
+title: Automated Advising System
+organization: EvCC
 date: January 2014
-start: "January 2014"
-end: "January 2015"
+start: January 2014
+end: January 2015
 excerpt: >-
   The Automated Advising System was an Algorithm's Club project at Everett
   Community College.

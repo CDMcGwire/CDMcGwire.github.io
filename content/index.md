@@ -1,13 +1,13 @@
 ---
 title: Connor McGwire
-subtext: Computer Scientist and Software Engineer.
+subtext: Computer Scientist and Software Engineer
 ---
 
 ## Background
 
-### Brown Brother's Harriman - Infomediary Team 
+### Brown Brother's Harriman - Infomediary Team
 [Oct 2017 - Present]{.timeline}
-
+[First 2 years hired as consultant with FDM Group]{.note}
 - Built and Supported Apache Camel based Enterprise Integration Systems
 - Supported legacy routing systems and assisted in modernization efforts
 - Built support tooling for managing a suite of applications across multiple
@@ -31,7 +31,7 @@ subtext: Computer Scientist and Software Engineer.
 - Carried out independent study in High Performance Computing
   - Focus on leveraging advances in General Purpose Graphics Processing Units
 - Took elective courses in Computer Vision and Signal Processing
-- Worked with a team to build a small game that was voted best in class 😄
+- Worked with a team to build a small game that was voted best in class
 
 ### Coding With Kids
 [Dec 2015 - May 2017]{.timeline}
@@ -102,7 +102,7 @@ understanding of modern web dev as a whole.
 
 Setup many, many project build schemes using Maven. Mostly for Java based
 projects, as was intended. Sometimes also for very much not Java based projects,
-as was probably not intended, but was stable and reliable enough. 😀
+as was probably not intended, but was stable and reliable enough.
 
 Experienced with integrating into other CI systems, like remote build servers,
 unit test frameworks, and artifactories.

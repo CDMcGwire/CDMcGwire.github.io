@@ -1,8 +1,9 @@
 ---
-title: "UW Bothell - EYE Center Research"
+title: EYE Center Research
+organization: UW Bothell
 date: January 2017
-start: "January 2017"
-end: "June 2017"
+start: January 2017
+end: June 2017
 excerpt: >-
   My capstone project at the University of Washington Bothell. I had the
   opportunity to work with the EYE Center (Educating Young Eyes) on research

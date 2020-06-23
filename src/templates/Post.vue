@@ -1,16 +1,24 @@
 <template>
-  <Layout :header="$page.markdown.title" :subtitle="$page.markdown.subtext" class="row">
+  <Layout
+    :header="$page.markdown.title"
+    :subtitle="$page.markdown.subtext"
+    class="row"
+  >
     <div class="row">
       <div class="sidebar">
         <ul>
-          <li v-for="heading in $page.markdown.headings" :key="heading.value" :class="'header' + heading.depth">
+          <li
+            v-for="heading in $page.markdown.headings"
+            :key="heading.value"
+            :class="'header' + heading.depth"
+          >
             <router-link :to="heading.anchor">
               {{ trimHeader(heading.value) }}
             </router-link>
           </li>
         </ul>
       </div>
-      <div class="content col" >
+      <div class="content col">
         <VueRemarkContent class="col" />
       </div>
     </div>
@@ -72,9 +80,19 @@ export default {
     margin-left 1.5ch
   li
     padding-left 1ch
-    border-left 2px solid accent-dark
+    border-left 3px solid accent-light
+    li
+      border-color accent-pri
+    li:nth-of-type(2n)
+      border-color accent-light
+  li:nth-of-type(2n)
+    border-color accent-pri
+    li
+      border-color accent-light
+    li:nth-of-type(2n)
+      border-color accent-pri
   li + li
-    margin-top 1.2ex
+    margin-top 1.6ex
   li > ul, li > p
     margin 0
   li > ul
@@ -83,14 +101,14 @@ export default {
     margin-top -80px
     padding-top 80px
   h2
-    margin-bottom 1ex
+    margin-bottom .5ex
   h3
     margin-bottom .5ex
     color accent-dark
   h2 + h3
     margin-top calc(1ex - 80px)
   p + h1, p + h2, p + h3, ul + h2, ul + h3
-    margin-top calc(3ex - 80px)
+    margin-top calc(2ex - 80px)
   h1, h2, h3, h4, h5, h6
     a
       transition all 0.2s
@@ -112,7 +130,15 @@ export default {
   .timeline
     float right
     font-size 0.9em
-    margin-top -2ex
+    margin-top -1.5ex
+    margin-right -2ch
+    margin-bottom -1.5ex
+    color accent-dark
+    @media screen and (max-width: content-width)
+      margin-right 0
+  .note
+    font-size 0.8em
+    color accent-dark
 </style>
 
 <page-query>
@@ -121,6 +147,9 @@ query ($id: ID!) {
     title
     content
     subtext
+    organization
+    start
+    end
     headings {
       depth
       value
