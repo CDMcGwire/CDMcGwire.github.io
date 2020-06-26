@@ -74,6 +74,7 @@ export default {
   padding-bottom 160px
   p, li
     font-size 0.9em
+    z-index 10
   p, ul
     margin-bottom 2ex
   ul
@@ -123,6 +124,20 @@ export default {
   h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover
     a
       opacity 100%
+  a
+    transition all 0.2s
+    color accent-link
+  a:hover
+    color accent-link-dark
+  blockquote
+    margin-left 2ch
+    max-width 60ch
+    font-style italic
+    border-left 5px solid accent-light
+    z-index 10
+    p
+      margin 0
+      padding 0 0 0.5ex 1.5ch
   .icon
     display inline-block
     @media screen and (max-width: content-width)
