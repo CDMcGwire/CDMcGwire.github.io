@@ -12,7 +12,7 @@
 		width: 100vw
 		height: 100vmax
 		overflow: hidden
-		background: repeat center/2in url("../img/bg-pattern-2.png")
+		background: repeat center/2in url("/img/bg-pattern-2.png")
 		animation: 10s linear 0s infinite normal both background-scroll
 		z-index: 1
 	.bg-layer-2
@@ -22,7 +22,7 @@
 		width: 100vw
 		height: 100vmax
 		overflow: hidden
-		background: repeat center/2in url("../img/bg-pattern-1.png")
+		background: repeat center/2in url("/img/bg-pattern-1.png")
 		animation: 4s linear 0s infinite normal both background-scroll-2
 		z-index: 1
 	.content
