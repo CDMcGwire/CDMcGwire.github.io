@@ -1,0 +1,162 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-4254f19b.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout@root.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/__layout-root.svelte",
+      "src/routes/games/__layout.svelte",
+      "src/routes/novels/__layout@root.svelte",
+      "src/routes/404.svelte",
+      "src/routes/games/index.svelte",
+      "src/routes/index.svelte",
+      "src/routes/novels/index.svelte"
+    ]
+  },
+  "src/routes/__layout@root.svelte": {
+    "file": "pages/__layout@root.svelte-c99ef882.js",
+    "src": "src/routes/__layout@root.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js"
+    ],
+    "css": [
+      "assets/pages/__layout@root.svelte-8cc886a7.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-4d800336.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js"
+    ]
+  },
+  "src/routes/__layout-root.svelte": {
+    "file": "pages/__layout-root.svelte-f696e9c9.js",
+    "src": "src/routes/__layout-root.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js"
+    ],
+    "css": [
+      "assets/pages/__layout-root.svelte-09e6f545.css"
+    ],
+    "assets": [
+      "assets/jetbrains-mono-all-400-normal-f86807b7.woff",
+      "assets/jetbrains-mono-cyrillic-400-normal-86ee4435.woff2",
+      "assets/jetbrains-mono-latin-ext-400-normal-520f5990.woff2",
+      "assets/jetbrains-mono-latin-400-normal-6fa9693e.woff2"
+    ]
+  },
+  "src/routes/games/__layout.svelte": {
+    "file": "pages/games/__layout.svelte-3dc9ef68.js",
+    "src": "src/routes/games/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js",
+      "_NavActions-ab8f1a7b.js",
+      "_index-a3a337dd.js"
+    ],
+    "css": [
+      "assets/pages/games/__layout.svelte-1b8a64c7.css"
+    ]
+  },
+  "src/routes/novels/__layout@root.svelte": {
+    "file": "pages/novels/__layout@root.svelte-6bdb51fa.js",
+    "src": "src/routes/novels/__layout@root.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js",
+      "_NavActions-ab8f1a7b.js",
+      "_index-a3a337dd.js"
+    ],
+    "css": [
+      "assets/pages/novels/__layout@root.svelte-6b9b3faf.css"
+    ],
+    "assets": [
+      "assets/baskervville-latin-ext-400-normal-7f7943c6.woff2",
+      "assets/baskervville-all-400-normal-732f290a.woff",
+      "assets/baskervville-latin-400-normal-bb1f7d3a.woff2"
+    ]
+  },
+  "src/routes/404.svelte": {
+    "file": "pages/404.svelte-b1f562de.js",
+    "src": "src/routes/404.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js"
+    ]
+  },
+  "src/routes/games/index.svelte": {
+    "file": "pages/games/index.svelte-32696eb3.js",
+    "src": "src/routes/games/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js"
+    ],
+    "css": [
+      "assets/pages/games/index.svelte-1a8e674e.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-480fd74c.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js",
+      "_index-a3a337dd.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-3989b94c.css"
+    ]
+  },
+  "src/routes/novels/index.svelte": {
+    "file": "pages/novels/index.svelte-53070555.js",
+    "src": "src/routes/novels/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e38d0f9f.js"
+    ],
+    "css": [
+      "assets/pages/novels/index.svelte-3d7c5358.css"
+    ],
+    "assets": [
+      "assets/metanoia-39fc5d9f.png",
+      "assets/tower-2899c88d.png"
+    ]
+  },
+  "_index-e38d0f9f.js": {
+    "file": "chunks/index-e38d0f9f.js"
+  },
+  "_NavActions-ab8f1a7b.js": {
+    "file": "chunks/NavActions-ab8f1a7b.js",
+    "imports": [
+      "_index-e38d0f9f.js",
+      "_index-a3a337dd.js"
+    ],
+    "css": [
+      "assets/NavActions-ff2fa15c.css"
+    ]
+  },
+  "_index-a3a337dd.js": {
+    "file": "chunks/index-a3a337dd.js",
+    "imports": [
+      "_index-e38d0f9f.js"
+    ]
+  }
+}
