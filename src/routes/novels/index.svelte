@@ -4,8 +4,11 @@
 </script>
 
 <img src={im_metanoiaTitle} alt="Metanoia Title" />
-<a class="kindle-link" target="_blank" href="https://www.amazon.com/gp/product/B0B4FJY836/ref=dbs_a_def_rwt_bibl_vppi_i0">
-	Available now on Kindle ❯
+<a class="store-link" target="_blank" href="https://www.amazon.com/gp/product/B0B4FJY836/ref=dbs_a_def_rwt_bibl_vppi_i0">
+	Available Digitally on Kindle ❯
+</a>
+<a class="store-link" target="_blank" href="https://www.barnesandnoble.com/w/metanoia-connor-mcgwire/1141734535?ean=9798765588666">
+	Available in Paperback at Barnes & Noble ❯
 </a>
 <div class="book-desc">
 	<img src={im_tower} alt="Metanoia Title" id="tower-flow" />
@@ -49,7 +52,7 @@
 		@media (min-width: $tablet-width)
 			margin-right: -100px
 			width: 320px
-	.kindle-link
+	.store-link
 		margin: 2ex
 		padding: 0.6ex 1.2ch
 		font-family: "JetBrains Mono"
