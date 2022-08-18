@@ -1,1 +1,0 @@
-import{default as e}from"../components/pages/novels/_layout@root.svelte-2c3791df.js";import"./index-977ccd18.js";import"./NavActions-102c26f6.js";import"./stores-f29c3325.js";import"./index-2336a02f.js";export{e as component};
