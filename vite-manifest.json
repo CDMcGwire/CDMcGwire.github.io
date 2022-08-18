@@ -7,18 +7,6 @@
     "file": "internal/immutable/assets/tower-2899c88d.png",
     "src": "src/lib/img/tower.png"
   },
-  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-cyrillic-400-normal.woff2": {
-    "file": "internal/immutable/assets/jetbrains-mono-cyrillic-400-normal-6ebfa299.woff2",
-    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-cyrillic-400-normal.woff2"
-  },
-  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-ext-400-normal.woff2": {
-    "file": "internal/immutable/assets/jetbrains-mono-latin-ext-400-normal-ae46b4e3.woff2",
-    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-ext-400-normal.woff2"
-  },
-  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2": {
-    "file": "internal/immutable/assets/jetbrains-mono-latin-400-normal-78f358e7.woff2",
-    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2"
-  },
   "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-latin-ext-400-normal.woff2": {
     "file": "internal/immutable/assets/baskervville-latin-ext-400-normal-7f7943c6.woff2",
     "src": "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-latin-ext-400-normal.woff2"
@@ -27,16 +15,28 @@
     "file": "internal/immutable/assets/baskervville-latin-400-normal-bb1f7d3a.woff2",
     "src": "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-latin-400-normal.woff2"
   },
-  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-all-400-normal.woff": {
-    "file": "internal/immutable/assets/jetbrains-mono-all-400-normal-5d90b381.woff",
-    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-all-400-normal.woff"
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2": {
+    "file": "internal/immutable/assets/jetbrains-mono-latin-400-normal-78f358e7.woff2",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-cyrillic-400-normal.woff2": {
+    "file": "internal/immutable/assets/jetbrains-mono-cyrillic-400-normal-6ebfa299.woff2",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-cyrillic-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-ext-400-normal.woff2": {
+    "file": "internal/immutable/assets/jetbrains-mono-latin-ext-400-normal-ae46b4e3.woff2",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-ext-400-normal.woff2"
   },
   "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-all-400-normal.woff": {
     "file": "internal/immutable/assets/baskervville-all-400-normal-732f290a.woff",
     "src": "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-all-400-normal.woff"
   },
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-all-400-normal.woff": {
+    "file": "internal/immutable/assets/jetbrains-mono-all-400-normal-5d90b381.woff",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-all-400-normal.woff"
+  },
   "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.420_svelte@3.49.0+vite@3.0.8/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "internal/immutable/start-d6705b36.js",
+    "file": "internal/immutable/start-86f8daba.js",
     "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.420_svelte@3.49.0+vite@3.0.8/node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -114,7 +114,7 @@
       "_index-977ccd18.js"
     ],
     "css": [
-      "internal/immutable/assets/+layout-f941b223.css"
+      "internal/immutable/assets/+layout-af01c8c1.css"
     ]
   },
   "src/routes/novels/+layout@root.svelte": {
@@ -160,7 +160,7 @@
     ]
   },
   "src/routes/games/official-taxonomy/+page.md": {
-    "file": "internal/immutable/components/pages/games/official-taxonomy/_page.md-30c65df2.js",
+    "file": "internal/immutable/components/pages/games/official-taxonomy/_page.md-128142d8.js",
     "src": "src/routes/games/official-taxonomy/+page.md",
     "isEntry": true,
     "imports": [
@@ -289,7 +289,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/8.js": {
-    "file": "internal/immutable/chunks/8-4041ed3b.js",
+    "file": "internal/immutable/chunks/8-6f99c126.js",
     "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
@@ -310,33 +310,33 @@
     "file": "internal/immutable/assets/+layout@root-979c878b.css",
     "src": "src/routes/+layout@root.css"
   },
+  "NavActions.css": {
+    "file": "internal/immutable/assets/NavActions-a15c62f9.css",
+    "src": "NavActions.css"
+  },
   "src/routes/games/+layout.css": {
     "file": "internal/immutable/assets/+layout-1a7b92a5.css",
     "src": "src/routes/games/+layout.css"
   },
   "src/routes/games/official-taxonomy/+layout.css": {
-    "file": "internal/immutable/assets/+layout-f941b223.css",
+    "file": "internal/immutable/assets/+layout-af01c8c1.css",
     "src": "src/routes/games/official-taxonomy/+layout.css"
   },
   "src/routes/+page.css": {
     "file": "internal/immutable/assets/+page-19ec7a91.css",
     "src": "src/routes/+page.css"
   },
-  "NavActions.css": {
-    "file": "internal/immutable/assets/NavActions-a15c62f9.css",
-    "src": "NavActions.css"
-  },
   "src/routes/games/+page.css": {
     "file": "internal/immutable/assets/+page-75fefbe3.css",
     "src": "src/routes/games/+page.css"
   },
-  "src/routes/novels/+layout@root.css": {
-    "file": "internal/immutable/assets/+layout@root-573fcc62.css",
-    "src": "src/routes/novels/+layout@root.css"
-  },
   "src/routes/novels/+page.css": {
     "file": "internal/immutable/assets/+page-fe88217f.css",
     "src": "src/routes/novels/+page.css"
+  },
+  "src/routes/novels/+layout@root.css": {
+    "file": "internal/immutable/assets/+layout@root-573fcc62.css",
+    "src": "src/routes/novels/+layout@root.css"
   },
   "src/routes/+layout-root.css": {
     "file": "internal/immutable/assets/+layout-root-5abdf086.css",
