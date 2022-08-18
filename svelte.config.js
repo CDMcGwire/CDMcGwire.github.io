@@ -1,52 +1,55 @@
-import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-static'
+import preprocess from 'svelte-preprocess'
+import { mdsvex } from 'mdsvex'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeAddClasses from 'rehype-add-classes'
 
 /** @type {import('@sveltejs/kit').Config} */
-export default {
-	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: null,
-			precompress: false
+const config = {
+	extensions: ['.svelte', '.md'],
+	preprocess: [
+		preprocess({
+			sourceMap: true,
+			babel: {
+				presets: [
+					[
+						'@babel/preset-env',
+						{
+							loose: true,
+							modules: false,
+							targets: {
+								esmodules: true
+							}
+						}
+					]
+				]
+			},
+			sass: {
+				prependData: `@import 'src/styles/vars.sass'`,
+				outputStyle: 'compressed',
+			},
 		}),
+		mdsvex({
+			extensions: ['.md'],
+			rehypePlugins: [
+				[
+					rehypeAddClasses, {
+					'h1,h2,h3,pre,blockquote,p,ul,li,ol,strong,em,hr': 'markdown'
+				}],
+				rehypeSlug,
+				rehypeAutolinkHeadings
+			]
+		})
+	],
+
+	kit: {
+		adapter: adapter(),
+		appDir: 'internal',
 		prerender: {
 			default: true
-		},
-		vite: {
-			server: {
-				cors: false
-			}
-		},
-		endpointExtensions: ['.js', '.ts'],
-		files: {
-			assets: 'static',
-			hooks: 'src/hooks',
-			lib: 'src/lib',
-			params: 'src/params',
-			routes: 'src/routes',
-			serviceWorker: 'src/service-worker',
-			template: 'src/app.html'
 		}
-	},
-	preprocess: preprocess({
-		babel: {
-			presets: [
-				[
-					'@babel/preset-env',
-					{
-						loose: true,
-						modules: false,
-						targets: {
-							esmodules: true
-						}
-					}
-				]
-			]
-		},
-		sass: {
-			prependData: `@import 'src/styles/vars.sass'`,
-			outputStyle: 'compressed'
-		}
-	})
-};
+	}
+}
+
+export default config
