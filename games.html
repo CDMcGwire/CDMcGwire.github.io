@@ -3,21 +3,22 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout-root.svelte-09e6f545.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout@root.svelte-c9aba462.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/games/__layout.svelte-1b8a64c7.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/NavActions-ff2fa15c.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/games/index.svelte-1a8e674e.css">
-	<link rel="modulepreload" href="/_app/immutable/start-72e581b5.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-e38d0f9f.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout-root.svelte-f696e9c9.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout@root.svelte-fb350e32.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/games/__layout.svelte-3dc9ef68.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/NavActions-ab8f1a7b.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-a3a337dd.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/games/index.svelte-32696eb3.js">
+	<link href="/internal/immutable/assets/+layout-root-b53f3222.css" rel="stylesheet">
+	<link href="/internal/immutable/assets/+layout@root-67fbe102.css" rel="stylesheet">
+	<link href="/internal/immutable/assets/+layout-1a7b92a5.css" rel="stylesheet">
+	<link href="/internal/immutable/assets/NavActions-a15c62f9.css" rel="stylesheet">
+	<link href="/internal/immutable/assets/+page-75fefbe3.css" rel="stylesheet">
+	<link rel="modulepreload" href="/internal/immutable/start-24edbde4.js">
+	<link rel="modulepreload" href="/internal/immutable/chunks/index-977ccd18.js">
+	<link rel="modulepreload" href="/internal/immutable/components/pages/_layout-root.svelte-9ca51fc8.js">
+	<link rel="modulepreload" href="/internal/immutable/components/pages/_layout@root.svelte-d2acb8bb.js">
+	<link rel="modulepreload" href="/internal/immutable/components/pages/games/_layout.svelte-c7b85232.js">
+	<link rel="modulepreload" href="/internal/immutable/chunks/NavActions-102c26f6.js">
+	<link rel="modulepreload" href="/internal/immutable/chunks/stores-f29c3325.js">
+	<link rel="modulepreload" href="/internal/immutable/chunks/index-2336a02f.js">
+	<link rel="modulepreload" href="/internal/immutable/components/pages/games/_page.svelte-879b7a49.js">
 	</head>
 	<body>
 
@@ -59,21 +60,24 @@
 
 
 		<script type="module" data-sveltekit-hydrate="xj4qcv">
-		import { start } from "/_app/immutable/start-72e581b5.js";
+		import { set_public_env, start } from "/internal/immutable/start-24edbde4.js";
+
+		set_public_env({});
+
 		start({
 			target: document.querySelector('[data-sveltekit-hydrate="xj4qcv"]').parentNode,
 			paths: {"base":"","assets":""},
-			session: {},
 			route: true,
 			spa: false,
 			trailing_slash: "never",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [2, 0, 3, 6],
+				node_ids: [2, 0, 3, 7],
 				params: {},
 				routeId: "games"
 			}
 		});
-	</script></body>
+	</script>
+	</body>
 </html>

@@ -1,0 +1,345 @@
+{
+  "src/lib/img/metanoia.png": {
+    "file": "internal/immutable/assets/metanoia-39fc5d9f.png",
+    "src": "src/lib/img/metanoia.png"
+  },
+  "src/lib/img/tower.png": {
+    "file": "internal/immutable/assets/tower-2899c88d.png",
+    "src": "src/lib/img/tower.png"
+  },
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-cyrillic-400-normal.woff2": {
+    "file": "internal/immutable/assets/jetbrains-mono-cyrillic-400-normal-6ebfa299.woff2",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-cyrillic-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-ext-400-normal.woff2": {
+    "file": "internal/immutable/assets/jetbrains-mono-latin-ext-400-normal-ae46b4e3.woff2",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2": {
+    "file": "internal/immutable/assets/jetbrains-mono-latin-400-normal-78f358e7.woff2",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-latin-ext-400-normal.woff2": {
+    "file": "internal/immutable/assets/baskervville-latin-ext-400-normal-7f7943c6.woff2",
+    "src": "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-latin-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-latin-400-normal.woff2": {
+    "file": "internal/immutable/assets/baskervville-latin-400-normal-bb1f7d3a.woff2",
+    "src": "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-all-400-normal.woff": {
+    "file": "internal/immutable/assets/jetbrains-mono-all-400-normal-5d90b381.woff",
+    "src": "node_modules/.pnpm/@fontsource+jetbrains-mono@4.5.10/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-all-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-all-400-normal.woff": {
+    "file": "internal/immutable/assets/baskervville-all-400-normal-732f290a.woff",
+    "src": "node_modules/.pnpm/@fontsource+baskervville@4.5.9/node_modules/@fontsource/baskervville/files/baskervville-all-400-normal.woff"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.418_svelte@3.49.0+vite@3.0.8/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "internal/immutable/start-24edbde4.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.418_svelte@3.49.0+vite@3.0.8/node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js",
+      ".svelte-kit/generated/nodes/4.js",
+      ".svelte-kit/generated/nodes/5.js",
+      ".svelte-kit/generated/nodes/6.js",
+      ".svelte-kit/generated/nodes/7.js",
+      ".svelte-kit/generated/nodes/8.js",
+      ".svelte-kit/generated/nodes/9.js"
+    ]
+  },
+  "src/routes/+layout@root.svelte": {
+    "file": "internal/immutable/components/pages/_layout@root.svelte-d2acb8bb.js",
+    "src": "src/routes/+layout@root.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+layout@root-67fbe102.css"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "internal/immutable/components/pages/_error.svelte-3a659cda.js",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js",
+      "_stores-f29c3325.js"
+    ]
+  },
+  "src/routes/+layout-root.svelte": {
+    "file": "internal/immutable/components/pages/_layout-root.svelte-9ca51fc8.js",
+    "src": "src/routes/+layout-root.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+layout-root-b53f3222.css"
+    ],
+    "assets": [
+      "internal/immutable/assets/jetbrains-mono-all-400-normal-5d90b381.woff",
+      "internal/immutable/assets/jetbrains-mono-cyrillic-400-normal-6ebfa299.woff2",
+      "internal/immutable/assets/jetbrains-mono-latin-ext-400-normal-ae46b4e3.woff2",
+      "internal/immutable/assets/jetbrains-mono-latin-400-normal-78f358e7.woff2"
+    ]
+  },
+  "src/routes/games/+layout.svelte": {
+    "file": "internal/immutable/components/pages/games/_layout.svelte-c7b85232.js",
+    "src": "src/routes/games/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js",
+      "_NavActions-102c26f6.js",
+      "_index-2336a02f.js",
+      "_stores-f29c3325.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+layout-1a7b92a5.css"
+    ]
+  },
+  "src/routes/games/official-taxonomy/+layout.svelte": {
+    "file": "internal/immutable/components/pages/games/official-taxonomy/_layout.svelte-c7ec5d7b.js",
+    "src": "src/routes/games/official-taxonomy/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+layout-f941b223.css"
+    ]
+  },
+  "src/routes/novels/+layout@root.svelte": {
+    "file": "internal/immutable/components/pages/novels/_layout@root.svelte-2c3791df.js",
+    "src": "src/routes/novels/+layout@root.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js",
+      "_NavActions-102c26f6.js",
+      "_index-2336a02f.js",
+      "_stores-f29c3325.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+layout@root-f5808023.css"
+    ],
+    "assets": [
+      "internal/immutable/assets/baskervville-latin-ext-400-normal-7f7943c6.woff2",
+      "internal/immutable/assets/baskervville-all-400-normal-732f290a.woff",
+      "internal/immutable/assets/baskervville-latin-400-normal-bb1f7d3a.woff2"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "internal/immutable/components/pages/_page.svelte-31b4db78.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js",
+      "_index-2336a02f.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+page-19ec7a91.css"
+    ]
+  },
+  "src/routes/games/+page.svelte": {
+    "file": "internal/immutable/components/pages/games/_page.svelte-879b7a49.js",
+    "src": "src/routes/games/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+page-75fefbe3.css"
+    ]
+  },
+  "src/routes/games/official-taxonomy/+page.md": {
+    "file": "internal/immutable/components/pages/games/official-taxonomy/_page.md-30c65df2.js",
+    "src": "src/routes/games/official-taxonomy/+page.md",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js"
+    ]
+  },
+  "src/routes/novels/+page.svelte": {
+    "file": "internal/immutable/components/pages/novels/_page.svelte-3864d330.js",
+    "src": "src/routes/novels/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-977ccd18.js"
+    ],
+    "css": [
+      "internal/immutable/assets/+page-6a172643.css"
+    ],
+    "assets": [
+      "internal/immutable/assets/metanoia-39fc5d9f.png",
+      "internal/immutable/assets/tower-2899c88d.png"
+    ]
+  },
+  "_index-977ccd18.js": {
+    "file": "internal/immutable/chunks/index-977ccd18.js"
+  },
+  "_stores-f29c3325.js": {
+    "file": "internal/immutable/chunks/stores-f29c3325.js",
+    "imports": [
+      "_index-977ccd18.js"
+    ]
+  },
+  "_NavActions-102c26f6.js": {
+    "file": "internal/immutable/chunks/NavActions-102c26f6.js",
+    "imports": [
+      "_index-977ccd18.js",
+      "_stores-f29c3325.js",
+      "_index-2336a02f.js"
+    ],
+    "css": [
+      "internal/immutable/assets/NavActions-a15c62f9.css"
+    ]
+  },
+  "_index-2336a02f.js": {
+    "file": "internal/immutable/chunks/index-2336a02f.js",
+    "imports": [
+      "_index-977ccd18.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "internal/immutable/chunks/0-87000b62.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+layout@root.svelte",
+      "_index-977ccd18.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "internal/immutable/chunks/1-4ecc382f.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+error.svelte",
+      "_index-977ccd18.js",
+      "_stores-f29c3325.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "internal/immutable/chunks/2-474ba3ac.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+layout-root.svelte",
+      "_index-977ccd18.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "internal/immutable/chunks/3-585cc679.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/games/+layout.svelte",
+      "_index-977ccd18.js",
+      "_NavActions-102c26f6.js",
+      "_stores-f29c3325.js",
+      "_index-2336a02f.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "internal/immutable/chunks/4-80154383.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/games/official-taxonomy/+layout.svelte",
+      "_index-977ccd18.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "internal/immutable/chunks/5-3368236c.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/novels/+layout@root.svelte",
+      "_index-977ccd18.js",
+      "_NavActions-102c26f6.js",
+      "_stores-f29c3325.js",
+      "_index-2336a02f.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "internal/immutable/chunks/6-63aa5caf.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte",
+      "_index-977ccd18.js",
+      "_index-2336a02f.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "internal/immutable/chunks/7-e2fea481.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/games/+page.svelte",
+      "_index-977ccd18.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/8.js": {
+    "file": "internal/immutable/chunks/8-4041ed3b.js",
+    "src": ".svelte-kit/generated/nodes/8.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/games/official-taxonomy/+page.md",
+      "_index-977ccd18.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/9.js": {
+    "file": "internal/immutable/chunks/9-eee57e10.js",
+    "src": ".svelte-kit/generated/nodes/9.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/novels/+page.svelte",
+      "_index-977ccd18.js"
+    ]
+  },
+  "src/routes/+layout@root.css": {
+    "file": "internal/immutable/assets/+layout@root-67fbe102.css",
+    "src": "src/routes/+layout@root.css"
+  },
+  "NavActions.css": {
+    "file": "internal/immutable/assets/NavActions-a15c62f9.css",
+    "src": "NavActions.css"
+  },
+  "src/routes/games/+layout.css": {
+    "file": "internal/immutable/assets/+layout-1a7b92a5.css",
+    "src": "src/routes/games/+layout.css"
+  },
+  "src/routes/games/+page.css": {
+    "file": "internal/immutable/assets/+page-75fefbe3.css",
+    "src": "src/routes/games/+page.css"
+  },
+  "src/routes/games/official-taxonomy/+layout.css": {
+    "file": "internal/immutable/assets/+layout-f941b223.css",
+    "src": "src/routes/games/official-taxonomy/+layout.css"
+  },
+  "src/routes/+page.css": {
+    "file": "internal/immutable/assets/+page-19ec7a91.css",
+    "src": "src/routes/+page.css"
+  },
+  "src/routes/novels/+layout@root.css": {
+    "file": "internal/immutable/assets/+layout@root-f5808023.css",
+    "src": "src/routes/novels/+layout@root.css"
+  },
+  "src/routes/novels/+page.css": {
+    "file": "internal/immutable/assets/+page-6a172643.css",
+    "src": "src/routes/novels/+page.css"
+  },
+  "src/routes/+layout-root.css": {
+    "file": "internal/immutable/assets/+layout-root-b53f3222.css",
+    "src": "src/routes/+layout-root.css"
+  }
+}
