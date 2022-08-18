@@ -12,7 +12,7 @@
 		margin: 2ex 0 0 0
 		padding: 0 12px
 		font-size: 1.6em
-		color: $skyb-1
+		color: $gold-2
 		border-left: 4px solid $gold-0
 		@media (min-width: $tablet-width)
 			font-size: 2.0em
