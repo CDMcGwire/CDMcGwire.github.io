@@ -74,14 +74,19 @@ _"What about stats!?!"_ you might ask. In the progenitor Pen & Paper systems, nu
   - **Dogfighting** -- Games about flying vehicles shooting each other to bits.
     - Examples:<br/>[IL-2 Sturmovik](https://www.igdb.com/games/il-2-sturmovik) -- Maddox Games (2001)<br/>[Ace Combat 7: Skies Unknown](https://www.igdb.com/games/ace-combat-7-skies-unknown) -- Project Aces (2019)
 - **Shooter** -- Games where even pressing a button is often done with bullets.
-  - **First Person Shooter** -- Shooters that are played from the controlled character's viewpoint.
+  - **First Person** -- Shooters that are played from the controlled character's viewpoint.
     - Examples:<br/>[DOOM](https://www.igdb.com/games/doom) -- id Software (1993)<br/>[DOOM](https://www.igdb.com/games/doom--2) -- id Software (2016)
-  - **Third Person Shooter** -- Shooters that are played with a perspective based just behind the controlled character... _You'd think this distinction wouldn't qualify a full subgenre, but when looking at things accurately is 90% of the game..._
+  - **Third Person** -- Shooters that are played with a perspective based just behind the controlled character... _You'd think this distinction wouldn't qualify a full subgenre, but when looking at things accurately is 90% of the game..._
     - Examples:<br/>[Max Payne](https://www.igdb.com/games/max-payne) -- Remedy Entertainment (2001)<br/>[Returnal](https://www.igdb.com/games/returnal) -- Housemarque (2021)
-    - **Cover Shooter** -- A specific strain of TPS where combat revolves around gluing the character behind rocks before shooting. This branch is already starting to tie back into the parent genre as implicit cover systems gain popularity.
+    - **Cover Based** -- A specific strain of TPS where combat revolves around gluing the character behind rocks before shooting. This branch is already starting to tie back into the parent genre as implicit cover systems gain popularity.
       - Examples:<br/>[Gears of War](https://www.igdb.com/games/gears-of-war) -- Epic Games (2006)<br/>[Uncharted 2](https://www.igdb.com/games/uncharted-2-among-thieves) -- Naughty Dog (2009)
-  - **Top-Down Shooters** -- Shooters in which the camera perspective comes from above the controlled character.
-    - Examples:<br/>[Asteroids](https://www.igdb.com/games/asteroids) -- Atari (1979)<br/>[Enter the Gungeon](https://www.igdb.com/games/enter-the-gungeon) -- Dodge Roll (2016)
+  - **Scrolling** -- Shooters in which the camera takes a fixed perspective of the player character and all relevant action takes place on a two-dimensional plane that the camera _scrolls_ across.
+    - **Side-scrolling** -- A scrolling shooter with a side-view perspective.
+      - Examples:<br/>[Contra](https://www.igdb.com/games/contra) -- Konami (1987)<br/>[Metroid Dread](https://www.igdb.com/games/metroid-dread) -- Nintendo EPD (2021)
+    - **Top-Down** -- Shooters in which the camera is positioned above the player character, looking down on them. This includes isometric shooters, because adding a 30deg tilt, _while absolutely cool looking_, does not fundamentally change anything.
+      - Examples:<br/>[Asteroids](https://www.igdb.com/games/asteroids) -- Atari (1979)<br/>[Enter the Gungeon](https://www.igdb.com/games/enter-the-gungeon) -- Dodge Roll (2016)
+  - **On-Rails** -- Shooters where the player has no, or very limited, control of their characters position in the world and must simply focus on shooting all the badies.
+    - Examples:<br/>[Space Invaders](https://www.igdb.com/games/space-invaders) -- Taito (1978)<br/>[***PROTECT THE LOIFECYCLE***](https://youtu.be/aAWxw0wmeNQ) -- WOW Entertainment (1998)
 
 ## Adventure Games
 
