@@ -44,7 +44,7 @@
 <p>
 	<em>Metanoia</em> is a paranormal sci-fi set in a near-future America. It's a very character
 	driven story supported by a setting that mixes optimistic, hard sci-fi with seemingly fantastical
-	(often horrorific) phenomena. While not stictly a <em>“mystery”</em> novel, the city presents our protagonist,
+	(often horrorific) phenomena. While not strictly a <em>“mystery”</em> novel, the city presents our protagonist,
 	John, with a plethora of secrets and plots that he must maneuver through. It's a story for those that
 	like fun dialogue and tense action first and foremost, but want it served in a thematically substantial
 	package.
