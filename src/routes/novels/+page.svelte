@@ -4,10 +4,18 @@
 </script>
 
 <img src={im_metanoiaTitle} alt="Metanoia Title" />
-<a class="store-link" target="_blank" href="https://www.amazon.com/gp/product/B0B4FJY836/ref=dbs_a_def_rwt_bibl_vppi_i0">
+<a
+	class="store-link"
+	target="_blank"
+	href="https://www.amazon.com/gp/product/B0B4FJY836/ref=dbs_a_def_rwt_bibl_vppi_i0"
+>
 	Available Digitally on Kindle ❯
 </a>
-<a class="store-link" target="_blank" href="https://www.barnesandnoble.com/w/metanoia-connor-mcgwire/1141734535?ean=9798765588666">
+<a
+	class="store-link"
+	target="_blank"
+	href="https://www.barnesandnoble.com/w/metanoia-connor-mcgwire/1141734535?ean=9798765588666"
+>
 	Available in Paperback at Barnes & Noble ❯
 </a>
 <div class="book-desc">
@@ -33,10 +41,24 @@
 	</p>
 </div>
 
+<p>
+	<em>Metanoia</em> is a paranormal sci-fi set in a near-future America. It's a very character
+	driven story supported by a setting that mixes optimistic, hard sci-fi with seemingly fantastical
+	(often horrorific) phenomena. While not stictly a <em>“mystery”</em> novel, the city presents our protagonist,
+	John, with a plethora of secrets and plots that he must maneuver through. It's a story for those that
+	like fun dialogue and tense action first and foremost, but want it served in a thematically substantial
+	package.
+</p>
+
+<p>
+	Fans of <em>Blade Runner</em>, <em>Deus Ex</em>, and <em>Persona 3</em> should find something to
+	like here, and I daresay even fans of <em>Dune</em> might find it compelling.
+</p>
+
 <style lang="sass">
-	h1
-		font-size: 2.75rem
 	p
+		align-self: flex-start
+		max-width: 70ch
 		font-size: 1.15em
 		line-height: 1.25
 		color: $gold-2
@@ -76,5 +98,5 @@
 				max-width: 500px
 		p
 			font-style: italic
-			color: $gold-2
+			color: $gold-3
 </style>

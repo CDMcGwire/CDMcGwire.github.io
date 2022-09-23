@@ -19,17 +19,6 @@
 </div>
 
 <style lang="sass">
-	:global
-		.novels-nav.home-link
-			padding: 1ex 1ch
-			color: $gold-0
-			font-family: "Baskervville", serif
-			font-size: 1.6em
-			background-color: hsla(0, 0%, 0%, 0.2)
-			border-radius: 6px
-			&:hover, &:focus
-				color: $gold-1
-				background-color: hsla(0, 0%, 0%, 0.5)
 	.bg-layer-1
 		position: fixed
 		top: 0
@@ -43,7 +32,9 @@
 		display: flex
 		flex-direction: row
 		justify-content: center
-		padding-top: 3in
+		padding:
+			top: 3in
+			bottom: 4in
 		color: $gold-0
 		font-family: "Baskervville", serif
 		z-index: 2
