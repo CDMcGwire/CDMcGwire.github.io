@@ -1,0 +1,1 @@
+import{default as e}from"../components/pages/games/_layout.svelte-5e1ec8ee.js";import"./index-977ccd18.js";import"./NavActions-54f67923.js";import"./stores-53679b4e.js";import"./index-2336a02f.js";export{e as component};
