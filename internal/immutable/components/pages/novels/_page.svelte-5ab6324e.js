@@ -10,7 +10,7 @@ import{S as wt,i as _t,s as bt,l as i,a as _,u as n,m as o,c as b,p as f,v as r,
 		himself on the frontline of an investigation into the growing mystery. Not merely to understand,\r
 		but to control.\u201D`),U=_(),d=i("p"),x=i("em"),W=n("Metanoia"),z=n(` is a paranormal sci-fi set in a near-future America. It's a very character\r
 	driven story supported by a setting that mixes optimistic, hard sci-fi with seemingly fantastical\r
-	(often horrorific) phenomena. While not stictly a `),A=i("em"),C=n("\u201Cmystery\u201D"),Q=n(` novel, the city presents our protagonist,\r
+	(often horrorific) phenomena. While not strictly a `),A=i("em"),C=n("\u201Cmystery\u201D"),Q=n(` novel, the city presents our protagonist,\r
 	John, with a plethora of secrets and plots that he must maneuver through. It's a story for those that\r
 	like fun dialogue and tense action first and foremost, but want it served in a thematically substantial\r
 	package.`),q=_(),l=i("p"),V=n("Fans of "),P=i("em"),j=n("Blade Runner"),X=n(", "),I=i("em"),Z=n("Deus Ex"),$=n(", and "),J=i("em"),tt=n("Persona 3"),et=n(` should find something to\r
@@ -26,7 +26,7 @@ import{S as wt,i as _t,s as bt,l as i,a as _,u as n,m as o,c as b,p as f,v as r,
 		himself on the frontline of an investigation into the growing mystery. Not merely to understand,\r
 		but to control.\u201D`),ft.forEach(a),w.forEach(a),U=b(t),d=o(t,"P",{class:!0});var B=f(d);x=o(B,"EM",{});var mt=f(x);W=r(mt,"Metanoia"),mt.forEach(a),z=r(B,` is a paranormal sci-fi set in a near-future America. It's a very character\r
 	driven story supported by a setting that mixes optimistic, hard sci-fi with seemingly fantastical\r
-	(often horrorific) phenomena. While not stictly a `),A=o(B,"EM",{});var ct=f(A);C=r(ct,"\u201Cmystery\u201D"),ct.forEach(a),Q=r(B,` novel, the city presents our protagonist,\r
+	(often horrorific) phenomena. While not strictly a `),A=o(B,"EM",{});var ct=f(A);C=r(ct,"\u201Cmystery\u201D"),ct.forEach(a),Q=r(B,` novel, the city presents our protagonist,\r
 	John, with a plethora of secrets and plots that he must maneuver through. It's a story for those that\r
 	like fun dialogue and tense action first and foremost, but want it served in a thematically substantial\r
 	package.`),B.forEach(a),q=b(t),l=o(t,"P",{class:!0});var p=f(l);V=r(p,"Fans of "),P=o(p,"EM",{});var ut=f(P);j=r(ut,"Blade Runner"),ut.forEach(a),X=r(p,", "),I=o(p,"EM",{});var dt=f(I);Z=r(dt,"Deus Ex"),dt.forEach(a),$=r(p,", and "),J=o(p,"EM",{});var pt=f(J);tt=r(pt,"Persona 3"),pt.forEach(a),et=r(p,` should find something to\r
