@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../normalize.css'
+	import '../styles/global.sass'
 	import '@fontsource/jetbrains-mono'
 </script>
 
@@ -8,13 +9,6 @@
 </div>
 
 <style lang="sass">
-	:global
-		html, body
-			font-family: monospace
-			font-size: 12pt
-		div
-			box-sizing: border-box
-
 	.outer-shell
 		display: flex
 		flex-direction: column

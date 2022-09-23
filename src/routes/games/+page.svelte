@@ -64,7 +64,4 @@
 		transition: all 0.2s
 		&:hover, &:focus
 			background-color: $royl-2
-	:global(.youtube-video)
-		margin: 3ex 0
-		width: 100%
 </style>

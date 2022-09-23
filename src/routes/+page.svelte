@@ -13,8 +13,7 @@
 			<MainHex />
 		</div>
 		<div class="main-nav">
-			<!-- Could make the "drawer" effect by having two inner elements... no need a more specific mask -->
-			<a href="/" class="main-link one disabled"><div>Under Work</div></a>
+			<a href="/portfolio" class="main-link one"><div>Portfolio</div></a>
 			<a href="/novels" class="main-link two"><div>Novels</div></a>
 			<a href="/games" class="main-link three"><div>Games</div></a>
 		</div>
@@ -105,9 +104,9 @@
 				transform: translate(-0.3in, -0.3in)
 				background-color: $royl-3
 
-	.disabled
-		pointer-events: none
-		div
-			color: $dkbl-0
-			background-color: $royl-0
+	// .disabled
+	// 	pointer-events: none
+	// 	div
+	// 		color: $dkbl-0
+	// 		background-color: $royl-0
 </style>

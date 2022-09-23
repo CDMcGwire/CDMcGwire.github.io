@@ -11,19 +11,7 @@
 	</div>
 </div>
 
-<style lang="sass">
-	:global
-		.standard-nav.home-link
-			padding: 1ex 1ch
-			color: $skyb-0
-			font-family: "JetBrains Mono", monospace
-			font-size: 1.5em
-			background-color: $dkbl-1
-			border-radius: 6px
-			&:hover, &:focus
-				color: $royl-3
-				background-color: $skyb-0
-	
+<style lang="sass">	
 	.content-outer
 		display: flex
 		flex-direction: row
