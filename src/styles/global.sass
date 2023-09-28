@@ -1,38 +1,51 @@
 @import vars, icon-font
 
 html
-	background-color: $dark-bg
+  background-color: $dark-bg
+
 html, body
-	font-family: monospace
-	font-size: 12pt
-	overflow-x: hidden
+  font-family: monospace
+  font-size: 12pt
+  overflow-x: hidden
+
 div
-	box-sizing: border-box
+  box-sizing: border-box
+
 a
-	text-decoration: none
+  text-decoration: none
 
 .standard-nav.home-link
-	padding: 1ex 1ch
-	color: $skyb-0
-	font-family: "JetBrains Mono", monospace
-	font-size: 1.5em
-	background-color: $dkbl-1
-	border-radius: 6px
-	&:hover, &:focus
-		color: $royl-3
-		background-color: $skyb-0
+  padding: 1ex 1ch
+  color: $skyb-0
+  font-family: "JetBrains Mono", monospace
+  font-size: 1.5em
+  background-color: $dkbl-1
+  border-radius: 6px
+
+  &:hover, &:focus
+    color: $royl-3
+    background-color: $skyb-0
 
 .novels-nav.home-link
-	padding: 1ex 1ch
-	color: $gold-0
-	font-family: "Baskervville", serif
-	font-size: 1.6em
-	background-color: hsla(0, 0%, 0%, 0.2)
-	border-radius: 6px
-	&:hover, &:focus
-		color: $gold-1
-		background-color: hsla(0, 0%, 0%, 0.5)
+  padding: 1ex 1ch
+  color: $gold-0
+  font-family: "Baskervville", serif
+  font-size: 1.6em
+  background-color: hsla(0, 0%, 0%, 0.2)
+  border-radius: 6px
+
+  &:hover, &:focus
+    color: $gold-1
+    background-color: hsla(0, 0%, 0%, 0.5)
 
 .youtube-video
-	margin: 3ex 0
-	width: 100%
+  margin: 3ex 0
+  width: 100%
+
+a.heading-anchor
+  color: $royl-2
+  margin-left: 0.4ch
+  vertical-align: text-bottom
+  transition: color 0.2s
+  &:hover, &:focus
+    color: $gold-3

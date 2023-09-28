@@ -1,27 +1,28 @@
-<script lang="ts">
-	export let source: string
+<script>
+  export let source;
 </script>
 
 <div class="wrapper youtube-video">
-	<iframe
-		src={source}
-		title="YouTube video player"
-		frameborder="0"
-		allow="clipboard-write; encrypted-media;"
-		allowfullscreen
-	/>
+  <iframe
+    src={source}
+    title="YouTube video player"
+    allow="clipboard-write; encrypted-media;"
+    allowfullscreen
+  />
 </div>
 
 <style lang="sass">
-	.wrapper
-		position: relative
-		height: 0
-		padding-bottom: 56.25%
-		overflow: hidden
-		iframe
-			position: absolute
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
+  .wrapper
+    position: relative
+    height: 0
+    padding-bottom: 56.25%
+    overflow: hidden
+
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border: none
 </style>

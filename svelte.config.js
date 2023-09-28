@@ -5,7 +5,7 @@ import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeAddClasses from 'rehype-add-classes'
 
-/** @type {import('@sveltejs/kit').Config} */
+/** @type {import("@sveltejs/kit").Config} */
 const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [
@@ -19,11 +19,11 @@ const config = {
 							loose: true,
 							modules: false,
 							targets: {
-								esmodules: true
-							}
-						}
-					]
-				]
+								esmodules: true,
+							},
+						},
+					],
+				],
 			},
 			sass: {
 				prependData: `@import 'src/styles/vars.sass'`,
@@ -34,22 +34,30 @@ const config = {
 			extensions: ['.md'],
 			rehypePlugins: [
 				[
-					rehypeAddClasses, {
-					'h1,h2,h3,pre,blockquote,p,ul,li,ol,strong,em,hr': 'markdown'
-				}],
+					rehypeAddClasses,
+					{
+						'h1,h2,h3,pre,blockquote,p,ul,li,ol,strong,em,hr': 'markdown',
+					},
+				],
 				rehypeSlug,
-				rehypeAutolinkHeadings
-			]
-		})
+				[
+					rehypeAutolinkHeadings,
+					{
+						behavior: 'append',
+						properties: {
+							ariaHidden: true,
+							tabIndex: -1,
+							class: 'heading-anchor',
+						},
+					},
+				],
+			],
+		}),
 	],
-
 	kit: {
 		adapter: adapter(),
 		appDir: 'internal',
-		prerender: {
-			default: true
-		}
-	}
+	},
 }
 
 export default config
