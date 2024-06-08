@@ -156,24 +156,24 @@
 <!-- Projects -->
 
 <h2 class='section-title'>Projects</h2>
-<div class='project entry'>
-	<div class='entry-info'>
-		<div class='entry-title'>Metanoia — Self-Published Novel</div>
-		<div class='takeaways'>Time management; persistence; product publishing experience</div>
-		<div class='date'>
-			<span class='start'>Jun 2022</span>
-		</div>
-	</div>
-	<p class='entry-desc'>
-		Wrote and edited a sci-fi novel then did all the work needed to get it ready for printing and
-		distribution.
-	</p>
-	<div>
-		<a href='/novels' target='_blank'>
-			<span class='icon-link' /> More info
-		</a>
-	</div>
-</div>
+<!--<div class='project entry'>-->
+<!--	<div class='entry-info'>-->
+<!--		<div class='entry-title'>Metanoia — Self-Published Novel</div>-->
+<!--		<div class='takeaways'>Time management; persistence; product publishing experience</div>-->
+<!--		<div class='date'>-->
+<!--			<span class='start'>Jun 2022</span>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<p class='entry-desc'>-->
+<!--		Wrote and edited a sci-fi novel then did all the work needed to get it ready for printing and-->
+<!--		distribution.-->
+<!--	</p>-->
+<!--	<div>-->
+<!--		<a href='/novels' target='_blank'>-->
+<!--			<span class='icon-link' /> More info-->
+<!--		</a>-->
+<!--	</div>-->
+<!--</div>-->
 
 <div class='project entry'>
 	<div class='entry-info'>
