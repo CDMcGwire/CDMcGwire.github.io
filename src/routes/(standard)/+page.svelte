@@ -16,9 +16,9 @@
       <a href="/portfolio" class="main-link one">
         <div>Portfolio</div>
       </a>
-      <a href="/novels" class="main-link two">
-        <div>Novels</div>
-      </a>
+<!--      <a href="/novels" class="main-link two">-->
+<!--        <div>Novels</div>-->
+<!--      </a>-->
       <a href="/games" class="main-link three">
         <div>Games</div>
       </a>
