@@ -42,7 +42,10 @@
 
 <h1>Shorts</h1>
 <h2>Lakeside Inheritance</h2>
-<p>Asked a friend for a horror story concept to write, and this was the result.</p>
+<p>
+	Asked a friend for a horror story concept to write, and this was the result. It's complete, but
+	not edited, so expect a little roughness for now.
+</p>
 <a class="store-link" href="stories/lakeside-inheritance">Read ❯ </a>
 
 <style lang="sass">
@@ -79,4 +82,5 @@
 
   .book-title
     margin-top: 100px
+    width: 800px
 </style>
