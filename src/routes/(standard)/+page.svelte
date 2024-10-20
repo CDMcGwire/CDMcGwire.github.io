@@ -1,29 +1,33 @@
 <script>
-  import MainHex from "$lib/svg/MainHex.svelte";
-  import Title from "$lib/svg/Title.svelte";
-  import { fly } from "svelte/transition";
+	import MainHex from '$lib/svg/MainHex.svelte'
+	import Title from '$lib/svg/Title.svelte'
+	import { fly } from 'svelte/transition'
 </script>
 
 <div class="outer-main">
-  <div class="inner-main" in:fly={{ x: -500, duration: 600, delay: 200 }} out:fly={{ x: -500, duration: 600 }}>
-    <div class="title-div">
-      <Title />
-    </div>
-    <div class="hex-div">
-      <MainHex />
-    </div>
-    <div class="main-nav">
-      <a href="/portfolio" class="main-link one">
-        <div>Portfolio</div>
-      </a>
-<!--      <a href="/novels" class="main-link two">-->
-<!--        <div>Novels</div>-->
-<!--      </a>-->
-      <a href="/games" class="main-link three">
-        <div>Games</div>
-      </a>
-    </div>
-  </div>
+	<div
+		class="inner-main"
+		in:fly={{ x: -500, duration: 600, delay: 200 }}
+		out:fly={{ x: -500, duration: 600 }}
+	>
+		<div class="title-div">
+			<Title />
+		</div>
+		<div class="hex-div">
+			<MainHex />
+		</div>
+		<div class="main-nav">
+			<a href="/portfolio" class="main-link one">
+				<div>Portfolio</div>
+			</a>
+			<a href="/stories" class="main-link two">
+				<div>Stories</div>
+			</a>
+			<a href="/games" class="main-link three">
+				<div>Games</div>
+			</a>
+		</div>
+	</div>
 </div>
 
 <style lang="sass">
@@ -42,13 +46,13 @@
     position: relative
     transition: transform 1s
     transform: translate(-50px, 0px)
-    @media (min-width: $phablet-width)
+    @media (min-width: v.$phablet-width)
       transform: translate(0, 0) scale(100%)
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       transform: scale(120%)
-    @media (min-width: $partial-width)
+    @media (min-width: v.$partial-width)
       transform: scale(130%)
-    @media (min-height: $oversize-height)
+    @media (min-height: v.$oversize-height)
       transform: scale(160%)
 
   .title-div
@@ -57,7 +61,7 @@
     z-index: 999
     transition: transform 1s, width 1s
     transform: translate(-135px, -200px)
-    @media (min-width: $phablet-width)
+    @media (min-width: v.$phablet-width)
       width: 392.71px
       transform: translate(-291px, -249.58px)
 
@@ -101,8 +105,8 @@
       align-items: center
       height: 100%
       padding: 6px
-      color: $dark-fg
-      background-color: $royl-3
+      color: v.$dark-fg
+      background-color: v.$royl-3
       box-shadow: -4px 2px 0 hsla(0, 0%, 0%, 0.2)
       transform: none
       transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s
@@ -114,13 +118,13 @@
 
     &:focus
       div
-        background-color: $royl-2
+        background-color: v.$royl-2
 
     &:active
       div
         box-shadow: 0 0 0 hsla(0, 0%, 0%, 0.0)
         transform: translate(-0.3in, -0.3in)
-        background-color: $royl-3
+        background-color: v.$royl-3
 
   // .disabled
   // 	pointer-events: none

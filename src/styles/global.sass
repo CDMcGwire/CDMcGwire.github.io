@@ -1,7 +1,8 @@
-@import vars, icon-font
+@use 'vars' as v
+@use 'icon-font'
 
 html
-  background-color: $dark-bg
+  background-color: v.$dark-bg
 
 html, body
   font-family: monospace
@@ -16,26 +17,27 @@ a
 
 .standard-nav.home-link
   padding: 1ex 1ch
-  color: $skyb-0
+  color: v.$skyb-0
   font-family: "JetBrains Mono", monospace
   font-size: 1.5em
-  background-color: $dkbl-1
+  background-color: v.$dkbl-1
   border-radius: 6px
 
   &:hover, &:focus
-    color: $royl-3
-    background-color: $skyb-0
+    color: v.$royl-3
+    background-color: v.$skyb-0
 
 .novels-nav.home-link
   padding: 1ex 1ch
-  color: $gold-0
+  color: v.$gold-0
   font-family: "Baskervville", serif
   font-size: 1.6em
-  background-color: hsla(0, 0%, 0%, 0.2)
+  background-color: hsla(2, 52%, 10%, 0.5)
+  backdrop-filter: blur(6px)
   border-radius: 6px
 
   &:hover, &:focus
-    color: $gold-1
+    color: v.$gold-1
     background-color: hsla(0, 0%, 0%, 0.5)
 
 .youtube-video
@@ -43,9 +45,9 @@ a
   width: 100%
 
 a.heading-anchor
-  color: $royl-2
+  color: v.$royl-2
   margin-left: 0.4ch
   vertical-align: text-bottom
   transition: color 0.2s
   &:hover, &:focus
-    color: $gold-3
+    color: v.$gold-3

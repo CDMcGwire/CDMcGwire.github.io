@@ -1,17 +1,24 @@
 <script>
-  import { page } from "$app/stores";
-  import { slide } from "svelte/transition";
+	import { page } from '$app/stores'
+	import { slide } from 'svelte/transition'
 
-  export let theme;
+	export let theme
 </script>
 
-{#if $page.url.pathname !== "/" }
-  <div class="{theme} actions-outer" transition:slide>
-    <div class="{theme} actions-inner">
-      <a class="{theme} home-link" href="/">❮ Home</a>
-    </div>
-  </div>
-{/if}
+<div class="{theme} actions-outer">
+	<div class="{theme} actions-inner" transition:slide>
+		{#if $page.url.pathname !== '/'}
+			{#if $page.url.pathname.lastIndexOf('/') == 0}
+				<a class="{theme} home-link" href="/">❮ Home</a>
+			{:else}
+				<a
+					class="{theme} home-link"
+					href={$page.url.pathname.substring(0, $page.url.pathname.lastIndexOf('/'))}>❮ Back</a
+				>
+			{/if}
+		{/if}
+	</div>
+</div>
 
 <style lang="sass">
   .actions-outer
