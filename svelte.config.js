@@ -26,8 +26,9 @@ const config = {
 				],
 			},
 			sass: {
-				prependData: `@import 'src/styles/vars.sass'`,
+				prependData: `@use 'src/styles/vars' as v`,
 				outputStyle: 'compressed',
+				silenceDeprecations: ['legacy-js-api'],
 			},
 		}),
 		mdsvex({

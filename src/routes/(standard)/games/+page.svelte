@@ -51,8 +51,8 @@
     margin-top: 1.6in
     padding: 0 12px
     font-size: 2.2em
-    color: $skyb-2
-    @media (min-width: $tablet-width)
+    color: v.$skyb-2
+    @media (min-width: v.$tablet-width)
       font-size: 2.6em
 
   h2
@@ -60,10 +60,10 @@
     margin: 6ex 0 0 0
     padding: 0 12px
     font-size: 1.6em
-    color: $skyb-1
+    color: v.$skyb-1
     h1 + &
       margin-top: 1ex
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       font-size: 2.0em
 
   p
@@ -80,11 +80,11 @@
     margin: 1ex 0 2ex 0
     padding: 1ch 1ex
     text-decoration: none
-    color: $dark-fg
-    background-color: $royl-3
+    color: v.$dark-fg
+    background-color: v.$royl-3
     border-radius: 6px
     transition: all 0.2s
 
     &:hover, &:focus
-      background-color: $royl-2
+      background-color: v.$royl-2
 </style>

@@ -324,8 +324,8 @@
     margin-top: 1.6in
     padding: 0 0.1in
     font-size: 1.8em
-    color: $skyb-2
-    @media (min-width: $tablet-width)
+    color: v.$skyb-2
+    @media (min-width: v.$tablet-width)
       font-size: 2.6em
       padding: 0
 
@@ -333,8 +333,8 @@
     margin: 3ex 0 1ex 0
     padding: 0 0.1in
     font-size: 1.6em
-    color: $skyb-1
-    @media (min-width: $tablet-width)
+    color: v.$skyb-1
+    @media (min-width: v.$tablet-width)
       font-size: 2.0em
       padding: 0
 
@@ -342,35 +342,35 @@
     margin: 1ex 0 2ex 0
     padding: 0 0.1in
     line-height: 1.5
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       padding: 0
 
   a
     display: inline-block
     padding: 0.2ex 0.6ch
-    color: $dark-fg
-    background-color: $royl-3
+    color: v.$dark-fg
+    background-color: v.$royl-3
     border-radius: 9999px
     transition: all 0.3s
 
     &:hover, &:focus
-      background-color: $royl-2
+      background-color: v.$royl-2
 
   .pro-title
-    color: $skyb-0
+    color: v.$skyb-0
 
   .pro-title-accent
-    color: $gold-1
+    color: v.$gold-1
 
   .contact-info
     padding: 0 0.1in
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       padding: 0
 
   .entry
     margin-bottom: 3ex
     padding: 0 0.1in
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       padding: 0
 
     a
@@ -385,8 +385,8 @@
     flex: 0 0 15ch
     padding-right: 0.5ch
     margin-right: 2ch
-    color: $gold-0
-    border-right: 1px solid $gold-2
+    color: v.$gold-0
+    border-right: 1px solid v.$gold-2
 
   .entry-info
     display: flex
@@ -400,8 +400,8 @@
     order: 2
     margin-right: 2ch
     font-size: 1.175rem
-    color: $gold-0
-    @media (min-width: $tablet-width)
+    color: v.$gold-0
+    @media (min-width: v.$tablet-width)
       flex: 1 0 60%
       order: 1
 
@@ -410,20 +410,20 @@
     order: 3
     margin-left: 4ch
     font-size: 1.05rem
-    color: $skyb-2
+    color: v.$skyb-2
 
     &::before
       flex: 0 0 1ch
       content: '@'
-      color: $skyb-1
+      color: v.$skyb-1
 
   .date
     display: flex
     flex: 0 1 100%
     order: 1
     font-size: 0.9rem
-    color: $skyb-3
-    @media (min-width: $tablet-width)
+    color: v.$skyb-3
+    @media (min-width: v.$tablet-width)
       flex: 0 1 auto
       order: 2
 
@@ -431,13 +431,13 @@
       content: 'to'
       margin: 0 1.5ch
       font-size: 0.8rem
-      color: $skyb-4
+      color: v.$skyb-4
 
   .entry-desc
     margin-left: 2ch
     margin-bottom: 2ex
     padding-left: 0.75ch
-    border-left: 1px solid $gold-2
+    border-left: 1px solid v.$gold-2
 
   .takeaways
     flex: 1 1 100%
@@ -446,14 +446,14 @@
     order: 3
     padding-left: 2ch
     font-size: 1rem
-    color: $gold-2
+    color: v.$gold-2
 
     &::before
       content: 'Takeaways >'
       margin-left: -1ch
-      color: $skyb-2
+      color: v.$skyb-2
 
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       flex-direction: row
       margin-left: 4ch
       padding-left: 0

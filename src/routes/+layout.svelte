@@ -15,8 +15,8 @@
 		align-items: center
 		width: 100vw
 		min-height: 100vh
-		background-color: $dark-bg
-		color: $dark-fg
+		background-color: v.$dark-bg
+		color: v.$dark-fg
 		font-family: "JetBrains Mono", monospace
 		overflow: hidden
 </style>

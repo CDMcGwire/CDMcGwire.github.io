@@ -61,7 +61,7 @@
     max-width: 70ch
     font-size: 1.15em
     line-height: 1.25
-    color: $gold-2
+    color: v.$gold-2
 
   img
     max-width: 100%
@@ -73,7 +73,7 @@
     margin-right: -90px
     shape-outside: url("/img/tower-mask.png")
     transition: height 1s
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       margin-right: -100px
       width: 320px
 
@@ -83,11 +83,11 @@
     font-family: "JetBrains Mono", monospace
     font-size: 1.2em
     text-decoration: none
-    color: $gold-1
+    color: v.$gold-1
     border-radius: 6px
     background-color: hsla(0, 0%, 0%, 0.2)
     transition: all 0.2s
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       font-size: 1.4em
 
     &:hover, &:focus
@@ -97,12 +97,12 @@
   .book-desc
     align-self: flex-start
     padding: 0 8%
-    @media (min-width: $tablet-width)
+    @media (min-width: v.$tablet-width)
       margin-left: 0.5in
       p
         max-width: 500px
 
     p
       font-style: italic
-      color: $gold-3
+      color: v.$gold-3
 </style>
