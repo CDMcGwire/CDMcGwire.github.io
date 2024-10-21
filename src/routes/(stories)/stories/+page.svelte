@@ -9,21 +9,21 @@
 <blockquote>
 	<!-- <img alt="Metanoia Title" id="tower-flow" src={im_tower} /> -->
 	<p>
-		“Joule: a young city founded by a faction of America’s elite claiming it would become “the spark
-		of a new era of Humanity.” Most of the world saw it as a dangerous playhouse for a power-mad
-		oligarchy, but to people like John Nakae it was a chance to escape a life of stagnation and
-		decay. For years, it was exactly that. Yet—for all their fervency—no one in the city could grasp
-		‘true’ change.
+		Joule: a young city founded by a faction of America’s elite who claimed it would become “the
+		spark of a new era of Humanity.” Most of the world saw it as a dangerous playhouse for a
+		power-mad oligarchy, but to people like John Nakae—a young and ambitious robotics engineer—it
+		was a chance to escape a life of stagnation and decay.
 	</p>
 	<p>
-		“Until one night, under the shadows of that city’s shining towers, that ‘change’ grasped John
-		and the new era was ushered in by the clawed hands of a nightmare.
+		For years, it was exactly that. Yet, for all their fervency, no one in the city could grasp
+		“true” change. Until one night, under the shadows of that city’s shining towers, that “change”
+		grasped John and the new era was ushered in by the clawed hands of a nightmare.
 	</p>
 	<p>
-		“When he comes to, he finds a mystery in the wake of the horror so enticing he forgets the
-		trauma of his near-death encounter, for in that mystery is the potential to finally reach that
-		next step for the world… If only he can come to understand and control it before the light of
-		his beloved city is snuffed out.”
+		When he comes to, he finds a golden mystery hidden in the wake of the horror. A mystery so
+		enticing he forgets the trauma of his near-death encounter. In it is the potential to finally
+		push the world into a bright future… If only he can come to understand it before the light of
+		his beloved city is snuffed out.
 	</p>
 </blockquote>
 <p>
